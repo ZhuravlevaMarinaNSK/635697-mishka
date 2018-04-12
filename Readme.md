@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Журавлева](https://up.htmlacademy.ru/adaptive/14/user/635697).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://up.htmlacademy.ru/adaptive/14/user/169035).
 
 ---
 
