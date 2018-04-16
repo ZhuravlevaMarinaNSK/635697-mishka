@@ -62,7 +62,7 @@
           </div>
         </article>
 
-        <article class="product__card">
+        <article class="product">
           <img class="product__image" src="#" width="260" height="195" alt="Большая корзинка для игрушек">
           <h2 class="product__name">Большая корзинка для игрушек</h2>
           <p class="product__description">Диаметр 30 см, высота 30см</p>
@@ -104,26 +104,26 @@
       </footer>
 
       <div class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="modal-form__text">Выберите размер:</p>
-          <div class="modal-form__controls">
-            <input class="modal-form__input size__control" type="checkbox" id="s" name="s">
-            <label class="modal-form__label size" for="s">
-              <span class="size__label">S</span>
-            </label>
-            <input class="modal-form__input size__control" type="checkbox" id="m" name="m">
-            <label class="modal-form__label size" for="m">
-              <span class="size__label">M</span>
-            </label>
-            <input class="modal-form__input size__control" type="checkbox" id="l" name="l">
-            <label class="modal-form__label size" for="l">
-              <span class="size__label">L</span>
-            </label>
-          </div>
-          <button class="button modal-form__button" type="submit">Добавить</button>
-        </form>
-      </div>
-      <div class="overlay"></div>
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal-form__text">Выберите размер:</p>
+            <div class="modal-form__controls">
+              <label class="modal-form__label size">
+                <input class="modal-form__input size__control" type="checkbox" name="s">
+                <span class="size__label">S</span>
+              </label>
+              <label class="modal-form__label size">
+                <input class="modal-form__input size__control" type="checkbox" name="m">
+                <span class="size__label">M</span>
+              </label>
+              <label class="modal-form__label size">
+                <input class="modal-form__input size__control" type="checkbox" name="l">
+                <span class="size__label">L</span>
+              </label>
+            </div>
+            <button class="button modal-form__button" type="submit">Добавить</button>
+          </form>
+        </div>
+        <div class="overlay"></div>
   </body>
 </html>
