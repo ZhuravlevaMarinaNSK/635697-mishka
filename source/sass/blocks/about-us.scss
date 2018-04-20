@@ -3,7 +3,6 @@
   background-color: $primary-color;
   padding-bottom: 30px;
   padding-top: 29px;
-  letter-spacing: 1.6px;
 }
 
 .about-us__title {
@@ -25,12 +24,12 @@
   padding-top: 58px;
   padding-bottom: 25px;
   padding-right: 30px;
+  position: relative;
   &--flower {
-    position: relative;
     &::before {
       content:"";
-      width: 31.972px;
-      height: 37.301px;
+      width: 32px;
+      height: 37px;
       background-image: url(../../img/icon-feature-flower.svg);
       position: absolute;
       top: 10px;
@@ -38,11 +37,10 @@
     }
   }
   &--banknote {
-    position: relative;
     &::before {
       content:"";
-      width: 46.575px;
-      height: 27.332px;
+      width: 47px;
+      height: 27px;
       background-image: url(../../img/icon-feature-money.svg);
       background-repeat: no-repeat;
       position: absolute;
@@ -51,11 +49,10 @@
     }
   }
   &--heart {
-    position: relative;
     &::before {
       content:"";
-      width: 33.05px;
-      height: 27.857px;
+      width: 33px;
+      height: 28px;
       background-image: url(../../img/icon-feature-heart.svg);
       background-repeat: no-repeat;
       position: absolute;
@@ -64,11 +61,10 @@
     }
   }
   &--ball {
-    position: relative;
     &::before {
       content:"";
-      width: 34.373px;
-      height: 34.373px;
+      width: 34px;
+      height: 34px;
       background-image: url(../../img/icon-feature-ball.svg);
       background-repeat: no-repeat;
       position: absolute;
@@ -77,11 +73,10 @@
     }
   }
   &--rocket {
-    position: relative;
     &::before {
       content:"";
-      width: 54.156px;
-      height: 23.183px;
+      width: 54px;
+      height: 23px;
       background-image: url(../../img/icon-feature-rocket.svg);
       background-repeat: no-repeat;
       position: absolute;
@@ -90,11 +85,10 @@
     }
   }
   &--gift {
-    position: relative;
     &::before {
       content:"";
-      width: 32.666px;
-      height: 32.486px;
+      width: 33px;
+      height: 33px;
       background-image: url(../../img/icon-feature-gift.svg);
       background-repeat: no-repeat;
       position: absolute;

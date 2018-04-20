@@ -1,21 +1,25 @@
 .production {
   background-color: $primary-color;
-  padding-top: 24px;
+  padding-top: 4px;
   padding-bottom: 31px;
-  position: relative;
 }
 
 .production__icon-play {
   position: absolute;
   top: 147px;
-  left: 110px;
+  left: 80px;
 }
 
 .production__icon-video {
   position: absolute;
-  top: 47px;
-  left: 60px;
-  color: red;
+  top: 25px;
+  left: 35px;
+}
+
+.production__card {
+  border: 1px solid $gray-light;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .production__video {

@@ -5,6 +5,11 @@
 
 }
 
+.product__card {
+  border: 1px solid $gray-light;
+  margin-bottom: 30px;
+}
+
 .product__image {
 
 }
@@ -12,7 +17,6 @@
 .product__name {
   padding-left: 30px;
   padding-top: 10px;
-
   @include font(17px,24px,700);
 }
 

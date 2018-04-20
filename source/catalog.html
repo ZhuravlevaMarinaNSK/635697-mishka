@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header>
-        <div class="page-header container">
+      <header class="page-header">
+        <div class="container">
           <a href="index.html" class="page-header__logo logo">
             <img class="logo__img" src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Логотип Mishka">
           </a>
@@ -39,11 +39,14 @@
       </header>
 
     <main>
-        <div class="wrapper-gray container">
-          <h1 class="main-title">Каталог товаров</h1>
+      <div class="title-background">
+        <div class="container">
+          <h1 class="title-background__text title-background__text--catalog">Каталог товаров</h1>
         </div>
-        <article class="product container">
-          <div class="border">
+      </div>
+      <div class="product">
+        <div class="container">
+          <article class="product__card">
             <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
             <h2 class="product__name">Зайчик-попрыгайчик</h2>
             <p class="product__description">Рост 30 см, вес 200г</p>
@@ -53,11 +56,9 @@
                 <img class="product__icon-cart" src="img/icon-cart.svg" width="20.294" height="18.849" alt="Корзина">
               </a>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="product container">
-          <div class="border">
+          <article class="product__card">
             <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья">
             <h2 class="product__name">Корзинка для белья</h2>
             <p class="product__description">Диаметр 15 см, высота 10см</p>
@@ -67,11 +68,9 @@
                 <img class="product__icon-cart" src="img/icon-cart.svg" width="20.294" height="18.849" alt="Корзина">
               </a>
             </div>
-         </div>
-        </article>
+          </article>
 
-        <article class="product container">
-          <div class="border">
+          <article class="product__card">
             <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
             <h2 class="product__name">Большая корзинка для игрушек</h2>
             <p class="product__description">Диаметр 30 см, высота 30см</p>
@@ -81,11 +80,13 @@
                 <img class="product__icon-cart" src="img/icon-cart.svg" width="20.294" height="18.849" alt="Корзина">
               </a>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
+      </div>
 
-        <div class="production container">
-          <div class="border">
+      <div class="production">
+        <div class="container">
+          <div class="production__card">
             <h2 class="production__title">Процесс производства</h2>
             <svg class="production__icon-video" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" fill="#149080">
               <g transform="translate(0 192)">
@@ -110,8 +111,9 @@
             </div>
           </div>
         </div>
-
       </div>
+    </div>
+
     </main>
 
     <footer class="page-footer container">

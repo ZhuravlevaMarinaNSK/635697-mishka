@@ -6,18 +6,16 @@
   color: $secondary-color;
   font-size: 0;
   position: absolute;
+  color:$gray-icons;
   &--instagram {
-    color:$gray-icons;
     top: 25px;
     left:58px;
   }
   &--facebook {
-    color:$gray-icons;
     top: 20px;
     left:120px;
   }
   &--twitter {
-    color:$gray-icons;
     top: 25px;
     left:175px;
   }

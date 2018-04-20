@@ -10,14 +10,13 @@
 
 .products__item {
   min-height: 103px;
+  position: relative;
     &--torch {
     background-color: $aqua-light;
-    position: relative;
-    }
+   }
     &--lego {
     background-color: $aqua-dark;
-    position: relative;
-  }
+   }
 }
 
 .products__link {
@@ -29,6 +28,5 @@
   padding-left: 1px;
   padding-bottom: 5px;
   word-wrap: break-word;
-  letter-spacing: 2.3px;
 }
 

@@ -3,10 +3,20 @@
   padding: 0;
 }
 
+.form-order__small-text {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  padding-right: 5px;
+  @include font(13px,24px,400);
+}
+
 .form-order__fieldset {
   border: none;
   margin: 0;
   padding: 0;
+  position: relative;
   &--type {
 
   }
@@ -17,10 +27,10 @@
 
   }
   &--phone {
-    position: relative;
+
   }
   &--email {
-    position: relative;
+
   }
   &--more {
 
@@ -83,6 +93,7 @@
 .form-order__checkbox-block:last-of-type {
   padding-bottom: 0;
 }
+
 .form-order__text-block {
   display: flex;
   flex-direction: column-reverse;
@@ -121,7 +132,7 @@
   width: 40px;
   height: 40px;
   border: 2px solid $gray-dark;
-   flex-shrink: 0;
+  flex-shrink: 0;
   &::after {
     content: url(../../img/icon-tick.svg);
     position: absolute;
@@ -136,7 +147,6 @@
 }
 
 .form-order__input {
-
 
   &--radio {
     display: none;

@@ -1,7 +1,6 @@
 .main-nav {
   margin: 0;
   padding: 0;
-
 }
 
 .main-nav__toggle {
@@ -9,15 +8,15 @@
   font-size: 0;
   background-color: white;
   background-image: url(../../img/icon-menu-open.svg);
-  width: 19.958px;
+  width: 20px;
   height: 14px;
   border: none;
   top: -50px;
   right: 10px;
   &--open {
     background-image: url(../../img/icon-menu-close.svg);
-    width: 20.514px;
-    height: 20.512px;
+    width: 21px;
+    height: 21px;
   }
 }
 

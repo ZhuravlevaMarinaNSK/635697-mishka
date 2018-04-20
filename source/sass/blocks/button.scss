@@ -1,17 +1,17 @@
 .button {
   display: inline-block;
   width: 100%;
-  box-sizing: border-box;
   border: 2px solid $secondary-color;
   @include font(18px,20px,700);
   text-transform: uppercase;
-  height: 53px;
+  min-height: 53px;
   vertical-align: middle;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 18px;
-  padding-left: 12px;
-  padding-right: 5px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: $secondary-color;
   letter-spacing: 0.2px;
+  box-sizing: border-box;
 }
