@@ -1,0 +1,105 @@
+.about-us {
+  color: $secondary-color;
+  background-color: $primary-color;
+  padding-bottom: 30px;
+  padding-top: 29px;
+  letter-spacing: 1.6px;
+}
+
+.about-us__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  @include font(25px,30px,700);
+}
+
+.about-us__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include font(17px,20px,700);
+}
+
+.about-us__item {
+  padding-top: 58px;
+  padding-bottom: 25px;
+  padding-right: 30px;
+  &--flower {
+    position: relative;
+    &::before {
+      content:"";
+      width: 31.972px;
+      height: 37.301px;
+      background-image: url(../../img/icon-feature-flower.svg);
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+  &--banknote {
+    position: relative;
+    &::before {
+      content:"";
+      width: 46.575px;
+      height: 27.332px;
+      background-image: url(../../img/icon-feature-money.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+  &--heart {
+    position: relative;
+    &::before {
+      content:"";
+      width: 33.05px;
+      height: 27.857px;
+      background-image: url(../../img/icon-feature-heart.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+  &--ball {
+    position: relative;
+    &::before {
+      content:"";
+      width: 34.373px;
+      height: 34.373px;
+      background-image: url(../../img/icon-feature-ball.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+  &--rocket {
+    position: relative;
+    &::before {
+      content:"";
+      width: 54.156px;
+      height: 23.183px;
+      background-image: url(../../img/icon-feature-rocket.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+  &--gift {
+    position: relative;
+    &::before {
+      content:"";
+      width: 32.666px;
+      height: 32.486px;
+      background-image: url(../../img/icon-feature-gift.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+}

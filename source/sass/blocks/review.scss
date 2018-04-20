@@ -1,0 +1,23 @@
+.review {
+  padding: 0;
+  margin: 0;
+}
+
+.review__text {
+  padding-bottom: 25px;
+  padding-right: 5px;
+  margin: 0;
+}
+
+.review__author {
+  @include font(17px,30px,700);
+  padding-bottom: 10px;
+  padding-right: 23px;
+}
+
+.review__account {
+  @include font(17px,30px,400);
+  margin: 0;
+  padding-bottom: 27px;
+  padding-right: 23px;
+}

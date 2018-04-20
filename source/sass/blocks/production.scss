@@ -1,0 +1,52 @@
+.production {
+  background-color: $primary-color;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  position: relative;
+}
+
+.production__icon-play {
+  position: absolute;
+  top: 147px;
+  left: 110px;
+}
+
+.production__icon-video {
+  position: absolute;
+  top: 47px;
+  left: 60px;
+  color: red;
+}
+
+.production__video {
+
+}
+
+.production__title {
+  margin: 0;
+  position: relative;
+  border-top: 1px solid $gray-light;
+  padding-top: 25px;
+  padding-left: 90px;
+  padding-bottom: 22px;
+  @include font(17px,24px,700);
+}
+
+.production__description {
+  @include font(13px,24px,400);
+  padding-top: 13px;
+  padding-left: 36px;
+  padding-bottom: 26px;
+}
+
+.production__wrapper {
+  width: 194px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+}
+
+.production__button {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,25 @@
+.page-footer {
+  background-color: $gray;
+}
+
+.page-footer__wrapper {
+  display: flex;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  padding-top: 25px;
+  padding-bottom: 29px;
+}
+
+.page-footer__copyright {
+  @include font(19px,18px,700);
+  margin-top: 40px;
+  padding-top: 62px;
+  padding-bottom: 10px;
+  padding-left: 38px;
+  border-top: 1px solid $gray-light;
+}
