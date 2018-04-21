@@ -12,7 +12,7 @@
   margin: 0;
   padding-bottom: 23px;
   padding-right: 23px;
-  @include font(25px,30px,700);
+  @include font(25px,30px);
 }
 
 .reviews__list {
@@ -20,14 +20,15 @@
 }
 
 .reviews__item {
-  @include font(15px,30px,400);
+  font-weight: 400;
+  @include font(15px,30px);
   padding-bottom: 10px;
 }
 
 .reviews__prev {
   margin-bottom: 36px;
   background-color: $primary-color;
-  background-image: url(../../img/icon-left-arrow.svg);
+  background-image: url(../img/icon-left-arrow.svg);
   background-position-y: center;
   background-position-x: 38px;
   background-repeat: no-repeat;
@@ -40,7 +41,7 @@
 .reviews__next {
   margin-bottom: 36px;
   background-color: $primary-color;
-  background-image: url(../../img/icon-right-arrow.svg);
+  background-image: url(../img/icon-right-arrow.svg);
   background-position-y: center;
   background-position-x: 36px;
   background-repeat: no-repeat;

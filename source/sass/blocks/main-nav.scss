@@ -7,14 +7,14 @@
   position: absolute;
   font-size: 0;
   background-color: white;
-  background-image: url(../../img/icon-menu-open.svg);
+  background-image: url(../img/icon-menu-open.svg);
   width: 20px;
   height: 14px;
   border: none;
   top: -50px;
   right: 10px;
-  &--open {
-    background-image: url(../../img/icon-menu-close.svg);
+  &.main-nav__toggle--open {
+    background-image: url(../img/icon-menu-close.svg);
     width: 21px;
     height: 21px;
   }
@@ -32,7 +32,6 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 280px;
-  @include font(17px,24px,700);
+  @include font(17px,24px);
 
 }

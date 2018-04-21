@@ -2,7 +2,7 @@
   display: inline-block;
   width: 100%;
   border: 2px solid $secondary-color;
-  @include font(18px,20px,700);
+  @include font(18px,20px);
   text-transform: uppercase;
   min-height: 53px;
   vertical-align: middle;

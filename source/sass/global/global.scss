@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: $primary-color;
   font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
   @font-face {
     font-family: "OpenSans";
     src: url("../../../fonts/opensans.woff2") format("woff2"),
@@ -17,4 +18,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  outline: 1px solid yellowgreen;
 }

@@ -33,24 +33,18 @@
   padding-top: 25px;
   padding-left: 90px;
   padding-bottom: 22px;
-  @include font(17px,24px,700);
+  @include font(17px,24px);
 }
 
 .production__description {
-  @include font(13px,24px,400);
+  font-weight: 400;
+  @include font(13px,24px);
   padding-top: 13px;
   padding-left: 36px;
   padding-bottom: 26px;
 }
 
-.production__wrapper {
-  width: 194px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-
-}
-
 .production__button {
   margin-bottom: 30px;
+  flex-grow: 1;
 }

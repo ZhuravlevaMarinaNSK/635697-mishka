@@ -17,18 +17,18 @@
 .product__name {
   padding-left: 30px;
   padding-top: 10px;
-  @include font(17px,24px,700);
+  @include font(17px,24px);
 }
 
 .product__description {
-  @include font(13px,30px,400);
+  @include font(13px,30px);
   padding-left: 30px;
   padding-right: 10px;
-
+  font-weight: 400;
 }
 
 .product__buy {
-  @include font(15px,24px,700);
+  @include font(15px,24px);
   padding-left: 30px;
   padding-top: 9px;
   position: relative;

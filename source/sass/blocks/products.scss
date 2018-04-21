@@ -11,10 +11,10 @@
 .products__item {
   min-height: 103px;
   position: relative;
-    &--torch {
+    &.products__item--interior {
     background-color: $aqua-light;
    }
-    &--lego {
+    &.products__item--lego {
     background-color: $aqua-dark;
    }
 }
@@ -22,7 +22,7 @@
 .products__link {
   display: inline-block;
   color:$primary-color;
-  @include font(19px,24px,700);
+  @include font(19px,24px);
   padding-top: 24px;
   padding-right: 120px;
   padding-left: 1px;

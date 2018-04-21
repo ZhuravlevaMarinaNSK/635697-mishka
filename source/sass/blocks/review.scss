@@ -10,13 +10,14 @@
 }
 
 .review__author {
-  @include font(17px,30px,700);
+  @include font(17px,30px);
   padding-bottom: 10px;
   padding-right: 23px;
 }
 
 .review__account {
-  @include font(17px,30px,400);
+  font-weight: 400;
+  @include font(17px,30px);
   margin: 0;
   padding-bottom: 27px;
   padding-right: 23px;

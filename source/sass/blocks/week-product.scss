@@ -9,13 +9,13 @@
   padding-left: 1px;
   padding-right: 5px;
   padding-bottom: 6px;
-  @include font(25px,30px,700);
+  @include font(25px,30px);
 }
 
 .week-product__promo {
   color: $aqua-text;
   text-transform: uppercase;
-  @include font(17px,20px,700);
+  @include font(17px,20px);
   padding-left: 1px;
   padding-bottom: 5px;
   padding-right: 5px;
@@ -26,12 +26,14 @@
   padding-top: 8px;
   padding-right: 3px;
   color: $gray-dark;
-  @include font(15px,24px,400);
+  font-weight: 400;
+  @include font(15px,24px);
 }
 
 .week-product__characters {
   color: $gray-dark;
-  @include font(15px,20px,400);
+  font-weight: 400;
+  @include font(15px,20px);
 }
 
 .week-product__image {
@@ -45,7 +47,7 @@
   padding-left: 65px;
   padding-right: 10px;
   color: $gray-dark;
-  @include font(17px,24px,700);
+  @include font(17px,24px);
 }
 
 .week-product__button {

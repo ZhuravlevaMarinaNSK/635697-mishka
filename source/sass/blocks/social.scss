@@ -7,15 +7,15 @@
   font-size: 0;
   position: absolute;
   color:$gray-icons;
-  &--instagram {
+  &.social__link--instagram {
     top: 25px;
     left:58px;
   }
-  &--facebook {
+  &.social__link--facebook {
     top: 20px;
     left:120px;
   }
-  &--twitter {
+  &.social__link--twitter {
     top: 25px;
     left:175px;
   }

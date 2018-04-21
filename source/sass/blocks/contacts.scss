@@ -9,12 +9,13 @@
   margin: 0;
   padding-right: 23px;
   padding-bottom: 5px;
-  @include font(18px,30px,700);
+  @include font(18px,30px);
 }
 
 .contacts__table {
   padding-bottom: 14px;
-  @include font(15px,30px,400);
+  font-weight: 400;
+  @include font(15px,30px);
 }
 
 .contacts__wrapper {
@@ -40,7 +41,7 @@
   padding: 0;
   padding-right: 10px;
   padding-bottom: 5px;
-  &--email {
+  &.contacts__value--email {
     border-bottom: 1px solid $aqua-icons;
   }
 }
