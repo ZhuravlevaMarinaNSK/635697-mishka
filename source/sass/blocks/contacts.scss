@@ -9,12 +9,14 @@
   margin: 0;
   padding-right: 23px;
   padding-bottom: 5px;
+
   @include font(18px,30px);
 }
 
 .contacts__table {
   padding-bottom: 14px;
   font-weight: 400;
+
   @include font(15px,30px);
 }
 
@@ -41,6 +43,7 @@
   padding: 0;
   padding-right: 10px;
   padding-bottom: 5px;
+
   &.contacts__value--email {
     border-bottom: 1px solid $aqua-icons;
   }
@@ -48,5 +51,5 @@
 
 .contacts__button {
   display: none;
-  padding: 40px 0px;
+  padding: 40px 0;
 }

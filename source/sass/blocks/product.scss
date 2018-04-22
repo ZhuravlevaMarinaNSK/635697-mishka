@@ -2,7 +2,6 @@
   background-color: $primary-color;
   padding-top: 29px;
   padding-bottom: 12px;
-
 }
 
 .product__card {
@@ -10,13 +9,10 @@
   margin-bottom: 30px;
 }
 
-.product__image {
-
-}
-
 .product__name {
   padding-left: 30px;
   padding-top: 10px;
+
   @include font(17px,24px);
 }
 
@@ -37,10 +33,6 @@
 
 .product__price {
   padding-right: 50px;
-}
-
-.product__link {
-
 }
 
 .product__icon-cart {

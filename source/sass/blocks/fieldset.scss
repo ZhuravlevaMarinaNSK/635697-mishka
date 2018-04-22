@@ -1,17 +1,22 @@
 .fieldset {
   padding-bottom: 25px;
+
   &.fieldset--checkbox {
     padding-bottom: 3px;
   }
+
   &.fieldset--text {
     padding-bottom: 12px;
   }
+
   &.fieldset--phone {
     padding-bottom: 8px;
   }
+
   &.fieldset--email {
     padding-bottom: 10px;
   }
+
   &.fieldset--textarea {
     padding-bottom: 18px;
   }
@@ -25,8 +30,10 @@
   padding-right: 27px;
   padding-bottom: 20px;
   position: relative;
+
   @include font(17px,16px);
   color: $aqua-light;
+
   &.fieldset__title:not(.fieldset__title--email)::after {
     content: "";
     width: 200px;
@@ -37,6 +44,7 @@
     display: block;
     right: 2px;
   }
+
   &.fieldset__title--email::after {
     content: "";
     width: 180px;

@@ -22,10 +22,6 @@
   position: relative;
 }
 
-.production__video {
-
-}
-
 .production__title {
   margin: 0;
   position: relative;
@@ -33,11 +29,13 @@
   padding-top: 25px;
   padding-left: 90px;
   padding-bottom: 22px;
+
   @include font(17px,24px);
 }
 
 .production__description {
   font-weight: 400;
+
   @include font(13px,24px);
   padding-top: 13px;
   padding-left: 36px;

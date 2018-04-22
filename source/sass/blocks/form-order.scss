@@ -10,6 +10,7 @@
   padding-left: 3px;
   padding-right: 5px;
   font-weight: 400;
+
   @include font(13px,24px);
 }
 
@@ -24,12 +25,14 @@
   margin: 0;
   padding-bottom: 30px;
   padding-right: 5px;
+
   @include font(14px,16px);
   color: $gray-dark;
 }
 
 .form-order__button {
   margin-bottom: 50px;
+
   @include font(17px,16px);
   font-weight: 700;
 }

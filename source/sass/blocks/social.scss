@@ -3,20 +3,22 @@
 }
 
 .social__link {
-  color: $secondary-color;
   font-size: 0;
   position: absolute;
-  color:$gray-icons;
+  color: $gray-icons;
+
   &.social__link--instagram {
     top: 25px;
-    left:58px;
+    left: 58px;
   }
+
   &.social__link--facebook {
     top: 20px;
-    left:120px;
+    left: 120px;
   }
+
   &.social__link--twitter {
     top: 25px;
-    left:175px;
+    left: 175px;
   }
 }

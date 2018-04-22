@@ -1,13 +1,13 @@
 //variables
 @import "variable.scss";
 //Global
+@import "global/font.scss";
 @import "global/container.scss";
 @import "global/mixin.scss";
 @import "global/global.scss";
 
 //Blocks
 @import "blocks/page-header.scss";
-@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
@@ -24,7 +24,6 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/modal.scss";
-@import "blocks/size.scss";
 @import "blocks/product.scss";
 @import "blocks/production.scss";
 @import "blocks/form-order.scss";
@@ -32,7 +31,6 @@
 @import "blocks/button.scss";
 @import "blocks/title-background.scss";
 @import "blocks/advanced-menu.scss";
-@import "blocks/overlay.scss";
 @import "blocks/fieldset.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/radio.scss";

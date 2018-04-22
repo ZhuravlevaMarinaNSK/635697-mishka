@@ -1,9 +1,11 @@
 .icon {
   fill: $aqua-icons;
+
   &.icon--interior {
     top: 22px;
     right: 35px;
   }
+
   &.icon--lego {
     top: 22px;
     right: 28px;
@@ -13,4 +15,3 @@
 .icon--products {
   position: absolute;
 }
-

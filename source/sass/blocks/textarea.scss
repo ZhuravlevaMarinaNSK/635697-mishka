@@ -1,9 +1,6 @@
-.textarea {
-
-}
-
 .textarea__control {
   font-weight: 400;
+
   @include font(17px,18px);
   color: $gray-dark;
   padding-top: 15px;

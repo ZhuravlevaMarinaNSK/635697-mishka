@@ -8,6 +8,7 @@
 
 .checkbox__label {
   display: inline-block;
+
   @include font(17px,18px);
   color: $secondary-color;
   padding-top: 15px;
@@ -27,12 +28,13 @@
   height: 40px;
   border: 2px solid $gray-dark;
   flex-shrink: 0;
+
   &.checkbox__icon::after {
-  content: url(../../img/icon-tick.svg);
-  position: absolute;
-  left: 6px;
-  bottom: 6px;
-  opacity: 0;
+    content: url("../img/icon-tick.svg");
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    opacity: 0;
   }
 }
 
