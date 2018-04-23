@@ -1,0 +1,18 @@
+.advanced-menu {
+  background-image: url("/img/hero-mobile@1x.jpg");
+  background-position-x: center;
+  background-position-y: -13px;
+  background-repeat: no-repeat;
+  background-color: #fbfbfb;
+  min-height: 283px;
+}
+
+.advanced-menu__page-title {
+  margin: 0;
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 10px;
+  color: $secondary-color;
+
+  @include font(27px,30px);
+}

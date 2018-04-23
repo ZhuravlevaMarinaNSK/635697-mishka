@@ -1,0 +1,30 @@
+.products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products__item {
+  min-height: 103px;
+  position: relative;
+
+  &.products__item--interior {
+    background-color: $aqua-light;
+  }
+
+  &.products__item--lego {
+    background-color: $aqua-dark;
+  }
+}
+
+.products__link {
+  display: inline-block;
+  color: $primary-color;
+
+  @include font(19px,24px);
+  padding-top: 24px;
+  padding-right: 120px;
+  padding-left: 1px;
+  padding-bottom: 5px;
+  word-wrap: break-word;
+}

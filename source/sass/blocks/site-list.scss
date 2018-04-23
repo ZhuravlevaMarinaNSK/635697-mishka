@@ -1,0 +1,20 @@
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  height: 79px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px solid $gray-light;
+}
+
+.site-list__link {
+  padding-left: 45px;
+  color: $secondary-color;
+}

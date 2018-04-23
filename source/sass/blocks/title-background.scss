@@ -1,0 +1,15 @@
+.title-background {
+  background-color: $gray;
+}
+
+.title-background__text {
+  margin: 0;
+  height: 178px;
+  vertical-align: middle;
+  padding-top: 70px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  box-sizing: border-box;
+
+  @include font(27px,30px);
+}

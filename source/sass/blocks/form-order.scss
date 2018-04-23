@@ -1,0 +1,38 @@
+.form-order {
+  margin: 0;
+  padding: 0;
+}
+
+.form-order__small-text {
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 15px;
+  padding-left: 3px;
+  padding-right: 5px;
+  font-weight: 400;
+
+  @include font(13px,24px);
+}
+
+.form-order__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.form-order__obligatory {
+  margin: 0;
+  padding-bottom: 30px;
+  padding-right: 5px;
+
+  @include font(14px,16px);
+  color: $gray-dark;
+}
+
+.form-order__button {
+  margin-bottom: 50px;
+
+  @include font(17px,16px);
+  font-weight: 700;
+}

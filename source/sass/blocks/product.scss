@@ -1,0 +1,42 @@
+.product {
+  background-color: $primary-color;
+  padding-top: 29px;
+  padding-bottom: 12px;
+}
+
+.product__card {
+  border: 1px solid $gray-light;
+  margin-bottom: 30px;
+}
+
+.product__name {
+  padding-left: 30px;
+  padding-top: 10px;
+
+  @include font(17px,24px);
+}
+
+.product__description {
+  @include font(13px,30px);
+  padding-left: 30px;
+  padding-right: 10px;
+  font-weight: 400;
+}
+
+.product__buy {
+  @include font(15px,24px);
+  padding-left: 30px;
+  padding-top: 9px;
+  position: relative;
+  border-bottom: 1px solid $gray-light;
+}
+
+.product__price {
+  padding-right: 50px;
+}
+
+.product__icon-cart {
+  position: absolute;
+  bottom: 18px;
+  right: 30px;
+}

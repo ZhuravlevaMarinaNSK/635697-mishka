@@ -1,0 +1,48 @@
+.production {
+  background-color: $primary-color;
+  padding-top: 4px;
+  padding-bottom: 31px;
+}
+
+.production__icon-play {
+  position: absolute;
+  top: 147px;
+  left: 80px;
+}
+
+.production__icon-video {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+}
+
+.production__card {
+  border: 1px solid $gray-light;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.production__title {
+  margin: 0;
+  position: relative;
+  border-top: 1px solid $gray-light;
+  padding-top: 25px;
+  padding-left: 90px;
+  padding-bottom: 22px;
+
+  @include font(17px,24px);
+}
+
+.production__description {
+  font-weight: 400;
+
+  @include font(13px,24px);
+  padding-top: 13px;
+  padding-left: 36px;
+  padding-bottom: 26px;
+}
+
+.production__button {
+  margin-bottom: 30px;
+  flex-grow: 1;
+}

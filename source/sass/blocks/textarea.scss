@@ -1,0 +1,10 @@
+.textarea__control {
+  font-weight: 400;
+
+  @include font(17px,18px);
+  color: $gray-dark;
+  padding-top: 15px;
+  padding-left: 15px;
+  border: 2px solid $secondary-color;
+  flex-grow: 1;
+}

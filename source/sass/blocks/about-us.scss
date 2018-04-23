@@ -1,0 +1,107 @@
+.about-us {
+  color: $secondary-color;
+  background-color: $primary-color;
+  padding-bottom: 30px;
+  padding-top: 29px;
+}
+
+.about-us__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+  @include font(25px,30px);
+}
+
+.about-us__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include font(17px,20px);
+}
+
+.about-us__item {
+  padding-top: 58px;
+  padding-bottom: 25px;
+  padding-right: 30px;
+  position: relative;
+
+  &.about-us__item--flower {
+    &::before {
+      content: "";
+      width: 32px;
+      height: 37px;
+      background-image: url("../img/icon-feature-flower.svg");
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &.about-us__item--banknote {
+    &::before {
+      content: "";
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &.about-us__item--heart {
+    &::before {
+      content: "";
+      width: 33px;
+      height: 28px;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &.about-us__item--ball {
+    &::before {
+      content: "";
+      width: 34px;
+      height: 34px;
+      background-image: url("../img/icon-feature-ball.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &.about-us__item--rocket {
+    &::before {
+      content: "";
+      width: 54px;
+      height: 23px;
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+
+  &.about-us__item--gift {
+    &::before {
+      content: "";
+      width: 33px;
+      height: 33px;
+      background-image: url("../img/icon-feature-gift.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+  }
+}
