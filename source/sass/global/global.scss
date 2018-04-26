@@ -4,6 +4,11 @@ body {
   background-color: $primary-color;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
+  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  min-width: 668px;
 }
 
 a {

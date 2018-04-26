@@ -1,10 +1,11 @@
-.title-background {
+.background {
   background-color: $gray;
 }
 
-.title-background__text {
+.background__text {
   margin: 0;
-  height: 178px;
+  min-height: 178px;
+  text-align: center;
   vertical-align: middle;
   padding-top: 70px;
   padding-bottom: 5px;
@@ -12,4 +13,13 @@
   box-sizing: border-box;
 
   @include font(27px,30px);
+}
+
+@media (min-width: $tablet-width) {
+  .background__text {
+  @include font(43px,50px);
+  }
+  .background--no-mobile {
+    background-color: $gray;
+  }
 }

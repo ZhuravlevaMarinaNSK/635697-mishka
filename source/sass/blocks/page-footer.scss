@@ -4,6 +4,7 @@
 
 .page-footer__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-footer__logo {
@@ -13,6 +14,8 @@
 .page-footer__social {
   padding-top: 25px;
   padding-bottom: 29px;
+  height: 50px;
+  width: 180px;
 }
 
 .page-footer__copyright {
@@ -21,5 +24,20 @@
   padding-top: 62px;
   padding-bottom: 10px;
   padding-left: 38px;
+  max-width: 200px;
   border-top: 1px solid $gray-light;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+  .page-footer__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__copyright {
+    margin-top: 0;
+    padding: 0;
+  }
 }

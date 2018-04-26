@@ -47,3 +47,16 @@
 .radio__control:checked ~ .radio__icon::after {
   opacity: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .radio__label {
+    width: 100%;
+    @include font(19px,19px);
+  }
+}
+@media (min-width: $desktop-width) {
+  .radio {
+    width: 100%;
+    flex-shrink: 1;
+  }
+}

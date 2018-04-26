@@ -30,6 +30,7 @@
   padding-right: 27px;
   padding-bottom: 20px;
   position: relative;
+  word-wrap: break-word;
 
   @include font(17px,16px);
   color: $aqua-light;
@@ -59,4 +60,34 @@
 
 .fieldset__item {
   display: flex;
+  min-width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset__title {
+    width: 25%;
+  }
+  .fieldset__wrapper {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: $desktop-width) {
+  .fieldset__title {
+    width: 17%;
+  }
+  .fieldset__wrapper {
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .fieldset__wrapper--desktop {
+    width: 80%;
+  }
+  .fieldset__item {
+    min-width: 244px;
+  }
 }

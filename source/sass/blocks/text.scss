@@ -26,6 +26,25 @@
   padding-bottom: 7px;
   padding-right: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .text {
+    width: 100%;
+    flex-direction: row-reverse;
+
+    @include font(19px,19px);
+  }
+  .text__control[type="email"] {
+    background-color: $gray;
+  }
+  .text__control[type="tel"] {
+    background-color: $gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
 /*
 .text__control--phone {
   color: $gray-dark;

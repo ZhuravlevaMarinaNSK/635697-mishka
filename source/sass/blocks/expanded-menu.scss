@@ -1,3 +1,47 @@
 .expanded {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .expanded {
+    display: block;
+    position: relative;
+  }
+  .expanded__list {
+    display: none;
+  }
+  .expanded__promo {
+    @include font(15px,24px);
+    color: $gray-dark;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .expanded {
+    position: absolute;
+    width: calc(#{$desktop-width} - 100px);
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  .expanded__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 35%;
+  }
+  .expanded__item a {
+    @include font(17px,24px);
+    color: $secondary-color;
+    font-weight: 700;
+  }
+  .expanded__promo {
+    position: static;
+  }
+}

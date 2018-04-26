@@ -8,3 +8,14 @@
 .map__img {
   background-color: $primary-color;
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+  }
+  .map__img {
+    position: absolute;
+    top: -370px;
+    left: 55%;
+  }
+}

@@ -15,7 +15,7 @@
   padding-left: 18px;
   padding-right: 10px;
   padding-bottom: 3px;
-  word-break: keep-all;
+  word-break: break-all;
   word-wrap: break-word;
   width: auto;
   box-sizing: border-box;
@@ -40,4 +40,10 @@
 
 .checkbox__control:checked ~ .checkbox__icon::after {
   opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox__label {
+    @include font(19px,19px);
+  }
 }

@@ -11,3 +11,10 @@
   margin-bottom: 18px;
   margin-left: 33%;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    margin-left: 0;
+    position: relative;
+  }
+}

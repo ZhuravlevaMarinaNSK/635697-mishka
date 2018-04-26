@@ -105,3 +105,37 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include font(20px,22px);
+  }
+  .about-us__list {
+    width: 50%;
+  }
+  .about-us__title {
+    @include font(43px,50px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-us__title {
+    @include font(53px,57px);
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+  .about-us__item {
+    min-height: 55px;
+  }
+}

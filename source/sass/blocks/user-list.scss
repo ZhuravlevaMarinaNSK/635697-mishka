@@ -5,7 +5,7 @@
 }
 
 .user-list__item {
-  height: 79px;
+  min-height: 79px;
   box-sizing: border-box;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -17,4 +17,24 @@
 .user-list__link {
   padding-left: 45px;
   color: $secondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__link {
+    padding: 0;
+  }
+  .user-list__link--search {
+    font-size: 0;
+    padding: 34px;
+    content: url(../img/icon-search.svg)
+  }
+  .user-list__link--cart {
+    display: block;
+    padding-left: 35px;
+    padding-top: 34px;
+    max-width: 300px;
+  }
+  .user-list__item {
+    padding: 0;
+  }
 }

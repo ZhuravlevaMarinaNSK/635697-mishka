@@ -8,3 +8,12 @@
   border: 2px solid $secondary-color;
   flex-grow: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .textarea {
+  width: 100%;
+  }
+  .textarea__control {
+    @include font(19px,19px);
+  }
+}
