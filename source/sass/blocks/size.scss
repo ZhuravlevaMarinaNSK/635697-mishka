@@ -1,0 +1,29 @@
+.size {
+  padding-bottom: 18px;
+}
+
+.size__control {
+  display: none;
+}
+
+.size__label {
+  display: inline-block;
+  text-align: center;
+
+  @include font(17px,17px);
+  font-weight: 700;
+  color: $secondary-color;
+  padding-top: 15px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 15px;
+  border: 2px solid $gray-light;
+  &:hover,
+  &:focus {
+    border: 2px solid $gray-dark;
+  }
+  &:active {
+    border: 2px solid $aqua-form;
+  }
+}
+

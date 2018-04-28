@@ -15,15 +15,17 @@
     color: $gray-dark;
     position: absolute;
     top: 15px;
-    right: 0;
+    right: 50px;
     z-index: 3;
   }
 }
 
 @media (min-width: $desktop-width) {
   .expanded {
-    position: absolute;
-    width: calc(#{$desktop-width} - 100px);
+
+    background-color: #f9f9f9;
+  }
+  .expanded__wrapper {
     display: flex;
     justify-content: space-between;
     z-index: 3;

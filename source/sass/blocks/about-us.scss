@@ -120,6 +120,9 @@
   .about-us__title {
     @include font(43px,50px);
   }
+  .about-us__item {
+    min-height: 55px;
+  }
 }
 
 @media (min-width: $desktop-width) {

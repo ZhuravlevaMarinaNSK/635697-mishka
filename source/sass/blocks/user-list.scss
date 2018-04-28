@@ -22,6 +22,13 @@
 @media (min-width: $tablet-width) {
   .user-list__link {
     padding: 0;
+    &:hover,
+    &:focus {
+      color:$secondary-color-60;
+    }
+    &:active {
+      color:$secondary-color-30;
+    }
   }
   .user-list__link--search {
     font-size: 0;

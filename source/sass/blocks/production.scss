@@ -64,6 +64,16 @@
   .production__wrapper {
     display: flex;
     flex-direction: column;
+    border: 1px solid transparent;
+    &:hover,
+    &:focus {
+      border: 1px solid $gray-light;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+      border: 1px solid $gray-light;
+      box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
   .production__video {
     margin-left: auto;

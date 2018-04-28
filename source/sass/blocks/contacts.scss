@@ -47,6 +47,14 @@
 
   &.contacts__value--email {
     border-bottom: 1px solid $aqua-icons;
+    &:hover,
+    &:focus {
+      color: $aqua-text;
+    }
+    &:active {
+      color: $aqua-text;
+      opacity: 0.3;
+    }
   }
 }
 

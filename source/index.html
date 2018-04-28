@@ -9,44 +9,50 @@
   </head>
   <body>
       <header>
-        <div class="page-header container">
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <a class="main-nav__logo logo" href="#">
-                <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
-              </a>
-              <ul class="main-nav__list main-nav__list--main site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="form.html">Вязание на заказ</a>
-                </li>
-              </ul>
-              <ul class="main-nav__list main-nav__list--user user-list">
-                <li class="user-list__item">
-                  <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
-                </li>
-                <li class="user-list__item">
-                  <a class="user-list__link user-list__link--cart" href="#">Корзина:пока пуста</a>
-                </li>
-              </ul>
-              <button class="main-nav__toggle main-nav__toggle--open" type="button">
-                Открыть меню
-              </button>
-            </div>
-          </nav>
+        <div class="page-header">
+          <div class="container">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+              <div class="main-nav__wrapper">
+                <a class="main-nav__logo logo" href="#">
+                  <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+                </a>
+                <ul class="main-nav__list main-nav__list--main site-list">
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Вязание на заказ</a>
+                  </li>
+                </ul>
+                <ul class="main-nav__list main-nav__list--user user-list">
+                  <li class="user-list__item">
+                    <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+                  </li>
+                  <li class="user-list__item">
+                    <a class="user-list__link user-list__link--cart" href="#">Корзина:пока пуста</a>
+                  </li>
+                </ul>
+                <button class="main-nav__toggle" type="button">
+                  Открыть меню
+                </button>
+              </div>
+            </nav>
+          </div>
           <section class="expanded">
-            <h2 class="visually-hidden">Расширенное меню</h2>
-            <ul class="expanded__list">
-              <li class="expanded__item">
-                <a href="#">Новые поступления</a>
-              </li>
-              <li class="expanded__item">
-                <a href="#">Распродажа</a>
-              </li>
-            </ul>
-            <span class="expanded__promo">Бесплатная доставка по России</span>
+            <div class="container">
+              <div class="expanded__wrapper">
+                <h2 class="visually-hidden">Расширенное меню</h2>
+                <ul class="expanded__list">
+                  <li class="expanded__item">
+                    <a href="#">Новые поступления</a>
+                  </li>
+                  <li class="expanded__item">
+                    <a href="#">Распродажа</a>
+                  </li>
+                </ul>
+                <span class="expanded__promo">Бесплатная доставка по России</span>
+              </div>
+            </div>
           </section>
         </div>
 
@@ -190,7 +196,8 @@
       </footer>
 
     <div class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
+      <div class="container">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="modal-form__text">Выберите размер:</p>
           <div class="modal-form__controls">
@@ -210,6 +217,9 @@
           <button class="button modal-form__button" type="submit">Добавить</button>
         </form>
       </div>
-      <div class="overlay"></div>
+    </div>
+    <div class="overlay"></div>
+
+      <!--<script src="js/script.js"></script>-->
   </body>
 </html>

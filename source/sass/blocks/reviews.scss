@@ -30,6 +30,13 @@
   height: 53px;
   font-size: 0;
   border: 1px solid $gray-light;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__next {
@@ -43,6 +50,13 @@
   height: 53px;
   font-size: 0;
   border: 1px solid $gray-light;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

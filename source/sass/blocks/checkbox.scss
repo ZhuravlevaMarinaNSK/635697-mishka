@@ -28,6 +28,13 @@
   height: 40px;
   border: 2px solid $gray-dark;
   flex-shrink: 0;
+  &:hover,
+  &:focus {
+    border: 2px solid $aqua-form;
+  }
+  &:active {
+    border: 2px solid $gray-30;
+  }
 
   &.checkbox__icon::after {
     content: url("../img/icon-tick.svg");

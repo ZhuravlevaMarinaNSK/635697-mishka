@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   width: 100%;
-  border: 2px solid $secondary-color;
+  border: 2px solid $gray-dark;
 
   @include font(18px,20px);
   text-transform: uppercase;
@@ -15,4 +15,13 @@
   color: $secondary-color;
   letter-spacing: 0.2px;
   box-sizing: border-box;
+  &:hover,
+  &:focus {
+    background-color: $gray-dark;
+    color: $primary-color;
+  }
+  &:active {
+    color: $primary-color-30;
+    background-color: $gray-dark;
+  }
 }

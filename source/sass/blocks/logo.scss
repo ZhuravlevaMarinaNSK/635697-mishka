@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  z-index: 30;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -17,6 +17,13 @@
 .site-list__link {
   padding-left: 45px;
   color: $secondary-color;
+  &:hover,
+  &:focus {
+    color:$secondary-color-60;
+  }
+  &:active {
+    color:$secondary-color-30;
+  }
 }
 
 @media (min-width: $tablet-width) {
