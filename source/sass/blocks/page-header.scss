@@ -1,6 +1,6 @@
 .page-header {
   background-color: $primary-color;
-   position: relative;
+  position: relative;
 }
 
 .page-header__logo {
@@ -15,5 +15,13 @@
   .page-header__logo {
     margin-left: 0;
     position: relative;
+  }
+  .page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .page-header {
+    background: linear-gradient($primary-color 50%, $gray 50%);
   }
 }

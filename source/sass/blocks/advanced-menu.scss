@@ -22,4 +22,12 @@
   .advanced-menu__page-title {
     @include font(43px,50px);
   }
+  .advanced-menu {
+    margin-top: -86px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .advanced-menu {
+    margin-top: -69px;
+  }
 }

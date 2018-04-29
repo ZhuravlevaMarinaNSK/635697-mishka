@@ -32,17 +32,7 @@
                       <a class="user-list__link user-list__link--cart" href="#">Корзина:пока пуста</a>
                     </li>
                   </ul>
-                  <button class="main-nav__toggle" type="button">
-                    Открыть меню
-                  </button>
-                </div>
-              </nav>
-            </div>
-            <section class="expanded">
-              <div class="container">
-                <div class="expanded__wrapper">
-                  <h2 class="visually-hidden">Расширенное меню</h2>
-                  <ul class="expanded__list">
+                  <ul class="main-nav__list main-nav__list--expanded expanded-list">
                     <li class="expanded__item">
                       <a href="#">Новые поступления</a>
                     </li>
@@ -50,12 +40,17 @@
                       <a href="#">Распродажа</a>
                     </li>
                   </ul>
-                  <span class="expanded__promo">Бесплатная доставка по России</span>
-                </div>
-              </div>
-            </section>
-          </div>
+                  <ul class="main-nav__list main-nav__list--promo promo-list">
+                    <li class="promo__item">Бесплатная доставка по России</li>
+                  </ul>
 
+                  <button class="main-nav__toggle" type="button">
+                    Открыть меню
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </div>
         </header>
 
     <main>
@@ -73,7 +68,7 @@
           <fieldset class="form-order__fieldset fieldset container">
             <div class="form-order__wrapper">
               <h2 class="fieldset__title">Тип</h2>
-              <div class="fieldset__wrapper">
+              <div class="fieldset__wrapper fieldset__wrapper--radio">
                 <div class="fieldset__item radio">
                   <input class="radio__control" type="radio" id="interior" name="type" checked>
                   <span class="radio__icon"></span>

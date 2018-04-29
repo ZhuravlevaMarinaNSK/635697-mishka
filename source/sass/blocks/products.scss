@@ -35,14 +35,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .products {
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: $tablet-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .products__list {
     display: flex;
     flex-wrap: wrap;
-    min-width: 668px;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .products__item {
     margin: 0;
@@ -59,7 +65,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .products__item {
-    width: 50%;
+  .products {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: $desktop-width;
   }
 }

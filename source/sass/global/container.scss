@@ -11,6 +11,7 @@
   .container {
     padding-left: 50px;
     padding-right: 50px;
+    min-width: $tablet-width;
   }
 }
 
@@ -18,5 +19,6 @@
   .container {
     padding-left: 100px;
     padding-right: 100px;
+    width: $desktop-width;
   }
 }
