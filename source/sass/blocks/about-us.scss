@@ -114,12 +114,15 @@
 
     @include font(20px,22px);
   }
+
   .about-us__list {
     width: 50%;
   }
+
   .about-us__title {
     @include font(43px,50px);
   }
+
   .about-us__item {
     min-height: 55px;
   }
@@ -131,6 +134,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .about-us__title {
     @include font(53px,57px);
     width: 67%;
@@ -138,6 +142,7 @@
     margin-right: auto;
     padding-left: 20px;
   }
+
   .about-us__item {
     min-height: 55px;
   }

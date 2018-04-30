@@ -14,10 +14,12 @@
     list-style: none;
     width: 35%;
   }
+
   .expanded__item {
     padding-top: 20px;
     width: 50%;
   }
+
   .expanded__item a {
     @include font(17px,24px);
     color: $secondary-color;

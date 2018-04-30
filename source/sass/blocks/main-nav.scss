@@ -20,8 +20,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 23px;
   height: 2px;
   background-color: $secondary-color;
@@ -32,16 +32,14 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 5px;
     left: 0;
-
     width: 23px;
     height: 2px;
-
     background-color: $secondary-color;
   }
+
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
@@ -55,11 +53,13 @@
 
 .main-nav__logo {
   display: block;
-  margin-left:40%;
+  margin-left: 40%;
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -89,18 +89,6 @@
     display: none;
   }
 
- /* .main-nav--opened .main-nav__wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 70px;
-    z-index: 10;
-
-    min-height: 80vh;
-
-    background-color: $primary-color;
-  }*/
-
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -110,6 +98,7 @@
   .main-nav__toggle {
     display: none;
   }
+
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
@@ -118,6 +107,7 @@
     flex-grow: 1;
     background: linear-gradient($primary-color 50%, $gray 50%);
   }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;
@@ -129,20 +119,24 @@
       z-index: 3;
       width: 50%;
     }
+
     &.main-nav__list--user {
       order: 2;
       width: 50%;
       justify-content: flex-end;
     }
+
     &.main-nav__list--expanded {
       display: none;
     }
+
     &.main-nav__list--promo {
       order: 4;
       display: block;
       width: 50%;
     }
   }
+
   .main-nav__logo {
     width: 130px;
     margin-left: 0;
@@ -150,29 +144,35 @@
     margin-bottom: auto;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-nav__list {
     justify-content: space-between;
+
     &.main-nav__list--main {
       order: 1;
       width: 35%;
       margin-right: auto;
     }
+
     &.main-nav__list--user {
       order: 3;
       width: 35%;
       margin-left: auto;
     }
+
     &.main-nav__list--expanded {
       order: 4;
       display: flex;
-      z-index:7;
+      z-index: 7;
     }
+
     &.main-nav__list--promo {
       order: 5;
-      z-index:7;
+      z-index: 7;
     }
   }
+
   .main-nav__logo {
     order: 2;
     width: auto;

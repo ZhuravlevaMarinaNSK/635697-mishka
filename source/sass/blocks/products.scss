@@ -29,19 +29,17 @@
   padding-left: 1px;
   padding-bottom: 5px;
   word-wrap: break-word;
+
   &:active {
-    color:$primary-color-60;
+    color: $primary-color-60;
   }
 }
 
 @media (min-width: $tablet-width) {
   .products {
-    padding-left: 50px;
-    padding-right: 50px;
-    min-width: $tablet-width;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: #fbfbfb;
   }
+
   .products__list {
     display: flex;
     flex-wrap: wrap;
@@ -50,24 +48,19 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .products__item {
     margin: 0;
     padding: 0;
     width: 50%;
   }
+
   .products__link {
     display: inline-block;
     padding-right: 180px;
     padding-left: 37px;
     box-sizing: border-box;
-    @include font(20px,30px);
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .products {
-    padding-left: 100px;
-    padding-right: 100px;
-    width: $desktop-width;
+    @include font(20px,30px);
   }
 }

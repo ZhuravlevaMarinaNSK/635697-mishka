@@ -1,5 +1,9 @@
 .background {
   background-color: $gray;
+
+  &--main {
+    background-color: #f9f9f9;
+  }
 }
 
 .background__text {
@@ -17,9 +21,11 @@
 
 @media (min-width: $tablet-width) {
   .background__text {
-  @include font(43px,50px);
+    @include font(43px,50px);
   }
+
   .background--no-mobile {
     background-color: $gray;
+    width: 100%;
   }
 }

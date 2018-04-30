@@ -4,9 +4,11 @@
   padding: 0;
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .promo-list {
     display: block;
+
     @include font(15px,24px);
     z-index: 3;
     padding-top: 20px;

@@ -41,19 +41,24 @@
 @media (min-width: $tablet-width) {
   .form-order__small-text {
     color: $gray-dark;
+
     @include font(17px,30px);
   }
+
   .form-order__wrapper {
     display: flex;
     align-items: flex-start;
   }
+
   .form-order__obligatory {
     order: 2;
+
     @include font(17px,30px);
     min-width: 50%;
     text-align: right;
     margin-left: auto;
   }
+
   .form-order__button {
     order: 1;
     width: 230px;
@@ -68,6 +73,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .form-order__wrapper--desktop {
     width: 700px;
     margin-left: auto;

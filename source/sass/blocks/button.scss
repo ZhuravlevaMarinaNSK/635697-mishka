@@ -15,11 +15,13 @@
   color: $secondary-color;
   letter-spacing: 0.2px;
   box-sizing: border-box;
+
   &:hover,
   &:focus {
     background-color: $gray-dark;
     color: $primary-color;
   }
+
   &:active {
     color: $primary-color-30;
     background-color: $gray-dark;

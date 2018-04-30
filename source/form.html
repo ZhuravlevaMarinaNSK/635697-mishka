@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8"
-     name="viewport"
-     content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
     <title>Магазин вязаных вещей ручной работы - Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -84,44 +82,46 @@
           </fieldset>
         </div>
 
-        <div class="background--no-mobile container">
-          <fieldset class="form-order__fieldset fieldset fieldset--checkbox">
-            <div class="form-order__wrapper">
-              <h2 class="fieldset__title">Цвет</h2>
-              <div class="fieldset__wrapper fieldset__wrapper--desktop">
-                <div class="fieldset__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="white" name="white" checked>
-                  <span class="checkbox__icon"></span>
-                  <label class="checkbox__label" for="white">Белый</label>
-                </div>
-                <div class="fieldset__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="gray" name="gray" checked>
-                  <span class="checkbox__icon"></span>
-                  <label class="checkbox__label" for="gray">Серый</label>
-                </div>
-                <div class="fieldset__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="tiffany" name="tiffany">
-                  <span class="checkbox__icon"></span>
-                  <label class="checkbox__label" for="tiffany">&laquo;Тиффани&raquo;</label>
-                </div>
-                <div class="fieldset__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="black" name="black">
-                  <span class="checkbox__icon"></span>
-                  <label class="checkbox__label" for="black">Черный</label>
-                </div>
-                <div class="fieldset__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="rose" name="rose">
-                  <span class="checkbox__icon"></span>
-                  <label class="checkbox__label" for="rose">Розовый</label>
-                </div>
-                <div class="fieldset__item checkbox">
-                  <input class="checkbox__control" type="checkbox" id="orange" name="orange">
-                  <span class="checkbox__icon"></span>
-                  <label class="checkbox__label" for="orange">Оранжевый</label>
+        <div class="background--no-mobile">
+          <div class="container">
+            <fieldset class="form-order__fieldset fieldset fieldset--checkbox">
+              <div class="form-order__wrapper">
+                <h2 class="fieldset__title">Цвет</h2>
+                <div class="fieldset__wrapper fieldset__wrapper--desktop">
+                  <div class="fieldset__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="white" name="white" checked>
+                    <span class="checkbox__icon"></span>
+                    <label class="checkbox__label" for="white">Белый</label>
+                  </div>
+                  <div class="fieldset__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="gray" name="gray" checked>
+                    <span class="checkbox__icon"></span>
+                    <label class="checkbox__label" for="gray">Серый</label>
+                  </div>
+                  <div class="fieldset__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="tiffany" name="tiffany">
+                    <span class="checkbox__icon"></span>
+                    <label class="checkbox__label" for="tiffany">&laquo;Тиффани&raquo;</label>
+                  </div>
+                  <div class="fieldset__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="black" name="black">
+                    <span class="checkbox__icon"></span>
+                    <label class="checkbox__label" for="black">Черный</label>
+                  </div>
+                  <div class="fieldset__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="rose" name="rose">
+                    <span class="checkbox__icon"></span>
+                    <label class="checkbox__label" for="rose">Розовый</label>
+                  </div>
+                  <div class="fieldset__item checkbox">
+                    <input class="checkbox__control" type="checkbox" id="orange" name="orange">
+                    <span class="checkbox__icon"></span>
+                    <label class="checkbox__label" for="orange">Оранжевый</label>
+                  </div>
                 </div>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
         </div>
         <div class="container">
           <fieldset class="form-order__fieldset fieldset fieldset--text">
@@ -144,30 +144,33 @@
             </div>
           </fieldset>
         </div>
-        <div class="background--no-mobile container">
-          <fieldset class="form-order__fieldset fieldset fieldset--phone">
-            <div class="form-order__wrapper">
-              <h2 class="fieldset__title">Тел</h2>
-              <div class="fieldset__wrapper">
-                <div class="fieldset__item text">
-                  <input class="text__control" type="tel" id="tel" placeholder="+7 XXX XX XX*" pattern="{+7}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-                  <label class="text__label visually-hidden" for="tel">Телефон</label>
+        <div class="background--no-mobile">
+          <div class="container">
+            <fieldset class="form-order__fieldset fieldset fieldset--phone">
+              <div class="form-order__wrapper">
+                <h2 class="fieldset__title">Тел</h2>
+                <div class="fieldset__wrapper">
+                  <div class="fieldset__item text">
+                    <input class="text__control" type="tel" id="tel" placeholder="+7 XXX XX XX*" pattern="{+7}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                    <label class="text__label visually-hidden" for="tel">Телефон</label>
+                  </div>
                 </div>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="form-order__fieldset fieldset fieldset--email">
-            <div class="form-order__wrapper">
-              <h2 class="fieldset__title fieldset__title--email">E-mail</h2>
-              <div class="fieldset__wrapper">
-                <div class="fieldset__item text">
-                  <input class="text__control" type="email" id="e-mail" placeholder="Ваш Email*" pattern="[A-Za-z]@[A-Za-z].ru" required>
-                  <label class="text__label visually-hidden" for="e-mail">E-mail</label>
+
+            <fieldset class="form-order__fieldset fieldset fieldset--email">
+              <div class="form-order__wrapper">
+                <h2 class="fieldset__title fieldset__title--email">E-mail</h2>
+                <div class="fieldset__wrapper">
+                  <div class="fieldset__item text">
+                    <input class="text__control" type="email" id="e-mail" placeholder="Ваш Email*" pattern="[A-Za-z]@[A-Za-z].ru" required>
+                    <label class="text__label visually-hidden" for="e-mail">E-mail</label>
+                  </div>
                 </div>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
         </div>
         <div class="container">
           <fieldset class="form-order__fieldset fieldset fieldset--textarea">

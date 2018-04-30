@@ -29,10 +29,12 @@
   border: 2px solid $gray-dark;
   border-radius: 50%;
   flex-shrink: 0;
+
   &:hover,
   &:focus {
     border: 2px solid $aqua-form;
   }
+
   &:active {
     border: 2px solid $gray-30;
   }
@@ -58,9 +60,11 @@
 @media (min-width: $tablet-width) {
   .radio__label {
     width: 100%;
+
     @include font(19px,19px);
   }
 }
+
 @media (min-width: $desktop-width) {
   .radio {
     width: 100%;

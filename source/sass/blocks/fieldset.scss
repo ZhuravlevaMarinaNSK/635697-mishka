@@ -66,36 +66,44 @@
 @media (min-width: $tablet-width) {
   .fieldset__title {
     width: 25%;
+
     &.fieldset__title:not(.fieldset__title--email)::after {
       display: none;
     }
   }
+
   .fieldset__wrapper {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
   .fieldset__wrapper--radio {
     flex-direction: column;
   }
 }
+
 @media (min-width: $desktop-width) {
   .fieldset__title {
     width: 17%;
+
     &.fieldset__title::after {
       display: none;
     }
   }
+
   .fieldset__wrapper {
     width: 66%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
   .fieldset__wrapper--desktop {
     width: 80%;
   }
+
   .fieldset__item {
     min-width: 244px;
   }
