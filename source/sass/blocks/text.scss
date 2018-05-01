@@ -15,6 +15,16 @@
   border-bottom: 2px solid $secondary-color;
   padding-right: 5px;
   padding-left: 5px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $aqua-form;
+  }
+
+  &:active {
+    border-bottom: 2px solid $aqua-form;
+    color: $secondary-color;
+  }
 }
 
 .text__label {
@@ -26,18 +36,20 @@
   padding-bottom: 7px;
   padding-right: 20px;
 }
-/*
-.text__control--phone {
-  color: $gray-dark;
-  position: absolute;
-  bottom: 35px;
-  right: 7px;
-}
 
-.text__control--email {
-  color: $gray-dark;
-  position: absolute;
-  bottom: 32px;
-  right: 6px;
+@media (min-width: $tablet-width) {
+  .text {
+    width: 100%;
+    flex-direction: row-reverse;
+
+    @include font(19px,19px);
+  }
+
+  .text__control[type="email"] {
+    background-color: $gray;
+  }
+
+  .text__control[type="tel"] {
+    background-color: $gray;
+  }
 }
-*/

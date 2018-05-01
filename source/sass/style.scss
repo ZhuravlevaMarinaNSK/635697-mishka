@@ -7,6 +7,7 @@
 @import "global/global.scss";
 
 //Blocks
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -28,8 +29,8 @@
 @import "blocks/production.scss";
 @import "blocks/form-order.scss";
 @import "blocks/icon.scss";
-@import "blocks/button.scss";
-@import "blocks/title-background.scss";
+@import "blocks/size.scss";
+@import "blocks/background.scss";
 @import "blocks/advanced-menu.scss";
 @import "blocks/fieldset.scss";
 @import "blocks/visually-hidden.scss";
@@ -37,3 +38,6 @@
 @import "blocks/checkbox.scss";
 @import "blocks/text.scss";
 @import "blocks/textarea.scss";
+@import "blocks/overlay.scss";
+@import "blocks/logo.scss";
+@import "blocks/promo.scss";

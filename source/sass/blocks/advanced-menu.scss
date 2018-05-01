@@ -1,10 +1,12 @@
 .advanced-menu {
-  background-image: url("/img/hero-mobile@1x.jpg");
+  background-color: #fbfbfb;
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-position-x: center;
   background-position-y: -13px;
   background-repeat: no-repeat;
-  background-color: #fbfbfb;
+
   min-height: 283px;
+  position: relative;
 }
 
 .advanced-menu__page-title {
@@ -15,4 +17,20 @@
   color: $secondary-color;
 
   @include font(27px,30px);
+}
+
+@media (min-width: $tablet-width) {
+  .advanced-menu__page-title {
+    @include font(43px,50px);
+  }
+
+  .advanced-menu {
+    margin-top: -86px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advanced-menu {
+    margin-top: -69px;
+  }
 }

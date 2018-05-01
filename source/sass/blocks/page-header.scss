@@ -1,6 +1,5 @@
 .page-header {
   background-color: $primary-color;
-  min-height: 79px;
   position: relative;
 }
 
@@ -10,4 +9,25 @@
   margin-top: 23px;
   margin-bottom: 18px;
   margin-left: 33%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    margin-left: 0;
+    position: relative;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-header {
+    background: linear-gradient($primary-color 50%, $gray 50%);
+
+    &--main {
+      background: linear-gradient($primary-color 50%, #f9f9f9 50%);
+    }
+  }
 }

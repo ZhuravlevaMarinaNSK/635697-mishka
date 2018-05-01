@@ -7,4 +7,25 @@
   padding-left: 15px;
   border: 2px solid $secondary-color;
   flex-grow: 1;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $aqua-form;
+  }
+
+  &:active {
+    border: 2px solid $aqua-form;
+    box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 1);
+    color: $secondary-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    width: 100%;
+  }
+
+  .textarea__control {
+    @include font(19px,19px);
+  }
 }

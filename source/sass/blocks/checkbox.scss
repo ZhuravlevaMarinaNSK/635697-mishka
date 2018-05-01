@@ -15,7 +15,7 @@
   padding-left: 18px;
   padding-right: 10px;
   padding-bottom: 3px;
-  word-break: keep-all;
+  word-break: break-all;
   word-wrap: break-word;
   width: auto;
   box-sizing: border-box;
@@ -29,6 +29,15 @@
   border: 2px solid $gray-dark;
   flex-shrink: 0;
 
+  &:hover,
+  &:focus {
+    border: 2px solid $aqua-form;
+  }
+
+  &:active {
+    border: 2px solid $gray-30;
+  }
+
   &.checkbox__icon::after {
     content: url("../img/icon-tick.svg");
     position: absolute;
@@ -40,4 +49,10 @@
 
 .checkbox__control:checked ~ .checkbox__icon::after {
   opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox__label {
+    @include font(19px,19px);
+  }
 }

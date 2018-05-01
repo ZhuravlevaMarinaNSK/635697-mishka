@@ -26,10 +26,19 @@
   background-position-y: center;
   background-position-x: 38px;
   background-repeat: no-repeat;
-  width: 128px;
+  width: 127px;
   height: 53px;
   font-size: 0;
   border: 1px solid $gray-light;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__next {
@@ -39,12 +48,84 @@
   background-position-y: center;
   background-position-x: 36px;
   background-repeat: no-repeat;
-  width: 128px;
+  width: 127px;
   height: 53px;
   font-size: 0;
   border: 1px solid $gray-light;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.reviews__button {
-  padding-bottom: 50px;
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    padding-right: 200px;
+
+    @include font(43px,50px);
+  }
+
+  .reviews__item {
+    @include font(17px,30px);
+  }
+
+  .reviews {
+    background-image: url("../img/review@1x.jpg");
+    background-position-x: 0;
+    background-repeat: no-repeat;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 175px;
+    padding: 15px 20px;
+
+    @include font(17px,20px);
+  }
+
+  .reviews__wrapper {
+    position: relative;
+  }
+
+  .reviews__prev {
+    position: absolute;
+    width: 80px;
+    height: 53px;
+    bottom: 0;
+    right: 67px;
+    background-position-x: 6px;
+  }
+
+  .reviews__next {
+    position: absolute;
+    width: 80px;
+    height: 53px;
+    bottom: 0;
+    right: 0;
+    background-position-x: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    width: 83%;
+    margin-left: auto;
+  }
+
+  .reviews__prev {
+    bottom: 0;
+    right: 67px;
+  }
+
+  .reviews__next {
+    bottom: 0;
+    right: 0;
+  }
 }
