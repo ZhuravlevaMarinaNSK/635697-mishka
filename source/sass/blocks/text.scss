@@ -1,20 +1,32 @@
 .text {
   display: flex;
   flex-direction: column-reverse;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .text__control {
   font-weight: 400;
   flex-grow: 1;
+  width: 92%;
 
   @include font(17px,18px);
   color: $gray-dark;
-  height: 38px;
+  height: 37px;
   border: none;
   border-bottom: 2px solid $secondary-color;
   padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 0;
+  padding-bottom: 6px;
+
+  &.text__control--phone {
+    height: 30px;
+    padding-top: 0;
+  }
+
+  &.text__control--email {
+    height: 30px;
+    padding-top: 0;
+  }
 
   &:hover,
   &:focus {
@@ -41,8 +53,14 @@
   .text {
     width: 100%;
     flex-direction: row-reverse;
+    padding-top: 12px;
+    padding-bottom: 18px;
 
     @include font(19px,19px);
+
+    &.text--email {
+      padding-top: 9px;
+    }
   }
 
   .text__control[type="email"] {
@@ -51,5 +69,66 @@
 
   .text__control[type="tel"] {
     background-color: $gray;
+  }
+
+  .text__control {
+    @include font(19px,19px);
+    margin-left: 24px;
+    padding-left: 16px;
+
+    &.text__control--name {
+      margin-left: 12px;
+    }
+
+    &.text__control--phone {
+      padding-top: 2px;
+      padding-bottom: 10px;
+    }
+
+    &.text__control--email {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text__control {
+    @include font(19px,18px);
+    padding-bottom: 7px;
+    margin-left: 3px;
+    padding-right: 70px;
+
+    &.text__control--name {
+      margin-left: 0;
+    }
+
+    &.text__control--phone {
+      padding-bottom: 13px;
+      width: 98%;
+    }
+
+    &.text__control--email {
+      width: 98%;
+    }
+  }
+
+  .text__label {
+    @include font(19px,18px);
+    padding-top: 11px;
+    padding-right: 33px;
+
+    &.text__label--name {
+      padding-right: 29px;
+    }
+  }
+
+  .text {
+    &.text--email {
+      width: 98%;
+    }
+
+    &.text--phone {
+      width: 98%;
+    }
   }
 }

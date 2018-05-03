@@ -2,30 +2,35 @@
   display: flex;
   flex-wrap: wrap;
   width: 260px;
-  padding-top: 15px;
+  padding-top: 28px;
 }
 
 .characters__label {
   margin: 0;
   width: 68px;
-  padding-left: 1px;
-  padding-right: 10px;
-  min-height: 12px;
+  padding-left: 0;
+  min-height: 11px;
 }
 
 .characters__value {
   display: inline-block;
   margin: 0;
-  width: 165px;
-  padding-left: 5px;
-  padding-right: 10px;
-  min-height: 12px;
+  padding-left: 29px;
+  min-height: 11px;
 }
 
 .characters__wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   border-bottom: 1px solid $gray;
   min-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+  padding-bottom: 2px;
+}
+
+@media (min-width: $desktop-width) {
+  .characters {
+    padding-top: 18px;
+  }
 }

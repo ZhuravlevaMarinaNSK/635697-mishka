@@ -5,9 +5,9 @@
 
 .form-order__small-text {
   margin: 0;
-  padding-top: 19px;
+  padding-top: 23px;
   padding-bottom: 15px;
-  padding-left: 3px;
+  padding-left: 1px;
   padding-right: 5px;
   font-weight: 400;
 
@@ -31,7 +31,8 @@
 }
 
 .form-order__button {
-  margin-bottom: 50px;
+  margin-bottom: 54px;
+  width: 93%;
 
   @include font(17px,17px);
   font-weight: 700;
@@ -41,6 +42,7 @@
 @media (min-width: $tablet-width) {
   .form-order__small-text {
     color: $gray-dark;
+    padding-top: 46px;
 
     @include font(17px,30px);
   }
@@ -48,6 +50,15 @@
   .form-order__wrapper {
     display: flex;
     align-items: flex-start;
+    padding-top: 45px;
+
+    &.form-order__wrapper--email {
+      padding-top: 0;
+    }
+
+    &.form-order__wrapper--tablet {
+      padding-top: 38px;
+    }
   }
 
   .form-order__obligatory {
@@ -57,11 +68,14 @@
     min-width: 50%;
     text-align: right;
     margin-left: auto;
+    padding-top: 9px;
+    padding-right: 1px;
   }
 
   .form-order__button {
     order: 1;
     width: 230px;
+    margin-bottom: 50px;
     flex-grow: 0;
     box-sizing: border-box;
   }
@@ -72,11 +86,19 @@
     width: 66%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 136px;
   }
 
-  .form-order__wrapper--desktop {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+  .form-order__wrapper {
+    padding-left: 66px;
+    padding-top: 42px;
+
+    &.form-order__wrapper--desktop {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 21px;
+      padding-top: 35px;
+    }
   }
 }

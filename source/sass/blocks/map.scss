@@ -11,7 +11,14 @@
 
 @media (min-width: $desktop-width) {
   .map {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
     position: relative;
+    margin-bottom: 25px;
   }
 
   .map__img {

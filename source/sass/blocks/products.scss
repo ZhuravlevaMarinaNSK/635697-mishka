@@ -24,9 +24,9 @@
   color: $primary-color;
 
   @include font(19px,24px);
-  padding-top: 24px;
+  padding-top: 25px;
   padding-right: 120px;
-  padding-left: 1px;
+  padding-left: 0;
   padding-bottom: 5px;
   word-wrap: break-word;
 
@@ -38,29 +38,43 @@
 @media (min-width: $tablet-width) {
   .products {
     background-color: #fbfbfb;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 668px;
   }
 
   .products__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .products__item {
     margin: 0;
     padding: 0;
-    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
   }
 
   .products__link {
     display: inline-block;
-    padding-right: 180px;
+    padding-right: 140px;
     padding-left: 37px;
     box-sizing: border-box;
 
     @include font(20px,30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__link {
+    padding-right: 400px;
+  }
+
+  .products {
+    width: 1050px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

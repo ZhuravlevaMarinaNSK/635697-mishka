@@ -9,3 +9,10 @@
 .copyright__link {
   font-size: 0;
 }
+
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding-right: 36px;
+  }
+}

@@ -16,8 +16,10 @@
   }
 
   .expanded__item {
+    box-sizing: border-box;
     padding-top: 20px;
     width: 50%;
+    padding-right: 5px;
   }
 
   .expanded__item a {

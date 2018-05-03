@@ -1,20 +1,23 @@
 .contacts {
   color: $secondary-color;
   background-color: $primary-color;
-  padding-top: 40px;
-  padding-bottom: 45px;
+  padding-top: 38px;
+  padding-bottom: 15px;
 }
 
 .contacts__title {
   margin: 0;
   padding-right: 23px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 2px;
 
   @include font(18px,30px);
+  font-weight: 700;
 }
 
 .contacts__table {
-  padding-bottom: 14px;
+  padding-bottom: 12px;
+  padding-top: 4px;
   font-weight: 400;
 
   @include font(15px,30px);
@@ -25,7 +28,7 @@
   margin: 0;
   justify-content: space-between;
   flex-direction: row;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 5px;
   flex-wrap: wrap;
 }
@@ -46,7 +49,20 @@
   padding-bottom: 5px;
 
   &.contacts__value--email {
-    border-bottom: 1px solid $aqua-icons;
+    padding-right: 0;
+    position: relative;
+
+    @include font(15px,30px);
+
+    &::after {
+      content: "";
+      width: 85%;
+      height: 1px;
+      background-color: $aqua-icons;
+      position: absolute;
+      top: 30px;
+      left: 9px;
+    }
 
     &:hover,
     &:focus {
@@ -60,18 +76,26 @@
   }
 }
 
+.contacts__button-wrapper {
+  padding-top: 35px;
+  padding-bottom: 37px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__title {
     @include font(43px,50px);
     position: relative;
     word-wrap: break-word;
     padding-right: 80px;
+    padding-top: 80px;
+    padding-bottom: 27px;
   }
 
   .contacts__table {
     @include font(17px,30px);
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 30px;
   }
 
   .contacts__wrapper {
@@ -86,13 +110,14 @@
   .contacts__value {
     flex-basis: 230px;
     padding-right: 0;
+    padding-left: 9px;
   }
 
   .contacts__title::after {
     content: url("../img/icon-flag.svg");
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 68px;
+    right: 2px;
   }
 
   .contacts__button {
@@ -102,6 +127,11 @@
     padding: 15px 40px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .contacts__button-wrapper {
+    padding-top: 55px;
+    padding-bottom: 56px;
   }
 }
 
@@ -118,6 +148,8 @@
     width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-top: 0;
+    order: 2;
   }
 
   .contacts__character {
@@ -130,14 +162,27 @@
 
   .contacts__button {
     margin-left: 0;
+    order: 3;
   }
 
   .contacts__title {
     @include font(53px,57px);
+    padding-top: 110px;
+    order: 1;
   }
 
   .contacts__title::after {
-    top: 0;
-    left: -100px;
+    top: 100px;
+    left: -115px;
+  }
+
+  .contacts__value {
+    padding-left: 0;
+  }
+
+  .contacts__button-wrapper {
+    padding-top: 0;
+    padding-bottom: 100px;
+    padding-left: 177px;
   }
 }

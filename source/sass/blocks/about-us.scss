@@ -1,7 +1,7 @@
 .about-us {
   color: $secondary-color;
   background-color: $primary-color;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
   padding-top: 29px;
 }
 
@@ -9,7 +9,8 @@
   margin: 0;
   padding-top: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-left: 0;
+  padding-bottom: 20px;
 
   @include font(25px,30px);
 }
@@ -18,13 +19,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 0;
+  padding-top: 9px;
 
   @include font(17px,20px);
 }
 
 .about-us__item {
-  padding-top: 58px;
-  padding-bottom: 25px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   padding-right: 30px;
   position: relative;
 
@@ -35,8 +38,8 @@
       height: 37px;
       background-image: url("../img/icon-feature-flower.svg");
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 3px;
+      left: 9px;
     }
   }
 
@@ -48,8 +51,8 @@
       background-image: url("../img/icon-feature-money.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 6px;
+      left: 1px;
     }
   }
 
@@ -61,8 +64,8 @@
       background-image: url("../img/icon-feature-heart.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 14px;
+      left: 8px;
     }
   }
 
@@ -74,7 +77,7 @@
       background-image: url("../img/icon-feature-ball.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
+      top: 7px;
       left: 5px;
     }
   }
@@ -88,7 +91,7 @@
       background-repeat: no-repeat;
       position: absolute;
       top: 10px;
-      left: 5px;
+      left: -5px;
     }
   }
 
@@ -107,12 +110,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-bottom: 28px;
+  }
+
   .about-us__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     @include font(20px,22px);
+    font-weight: 700;
   }
 
   .about-us__list {
@@ -121,10 +129,16 @@
 
   .about-us__title {
     @include font(43px,50px);
+    padding-top: 78px;
+    padding-bottom: 35px;
   }
 
   .about-us__item {
     min-height: 55px;
+    padding-bottom: 40px;
+
+    @include font(20px,22px);
+    font-weight: 700;
   }
 }
 
@@ -140,10 +154,15 @@
     width: 67%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-top: 115px;
   }
 
   .about-us__item {
     min-height: 55px;
+  }
+
+  .about-us {
+    padding-bottom: 32px;
   }
 }

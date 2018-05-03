@@ -12,7 +12,7 @@
 .review__author {
   @include font(17px,30px);
   padding-bottom: 10px;
-  padding-right: 70px;
+  padding-right: 7px;
 }
 
 .review__account {
@@ -22,4 +22,20 @@
   margin: 0;
   padding-bottom: 27px;
   padding-right: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__author {
+    padding-top: 50px;
+  }
+
+  .review__text {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__text {
+    padding-bottom: 37px;
+  }
 }

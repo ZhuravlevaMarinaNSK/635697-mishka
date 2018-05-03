@@ -2,14 +2,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 18px;
 }
 
 .site-list__item {
   min-height: 79px;
   box-sizing: border-box;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
+  padding-top: 26px;
+  padding-bottom: 20px;
+  padding-left: 0;
   padding-right: 15px;
   border-top: 1px solid $gray-light;
 }
@@ -31,14 +32,18 @@
 @media (min-width: $tablet-width) {
   .site-list__item {
     box-sizing: border-box;
-    max-width: 167px;
-    padding-top: 20px;
+    max-width: 175px;
+    padding-top: 25px;
     padding-bottom: 30px;
     padding-left: 0;
-    padding-right: 15px;
+    padding-right: 45px;
     border-top: none;
 
     @include font(15px,24px);
+  }
+
+  .site-list {
+    margin-top: 0;
   }
 
   .site-list__link {
@@ -49,5 +54,10 @@
 @media (min-width: $desktop-width) {
   .site-list__item {
     @include font(17px,24px);
+    max-width: 175px;
+    padding-right: 10px;
+    padding-top: 23px;
+    padding-left: 3px;
+    padding-bottom: 35px;
   }
 }

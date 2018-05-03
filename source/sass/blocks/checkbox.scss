@@ -1,5 +1,6 @@
 .checkbox {
   padding-bottom: 18px;
+  padding-top: 4px;
 }
 
 .checkbox__control {
@@ -11,8 +12,8 @@
 
   @include font(17px,18px);
   color: $secondary-color;
-  padding-top: 15px;
-  padding-left: 18px;
+  padding-top: 11px;
+  padding-left: 22px;
   padding-right: 10px;
   padding-bottom: 3px;
   word-break: break-all;
@@ -24,8 +25,8 @@
 .checkbox__icon {
   position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 2px solid $gray-dark;
   flex-shrink: 0;
 
@@ -41,8 +42,8 @@
   &.checkbox__icon::after {
     content: url("../img/icon-tick.svg");
     position: absolute;
-    left: 6px;
-    bottom: 6px;
+    left: 2px;
+    bottom: 5px;
     opacity: 0;
   }
 }
@@ -54,5 +55,36 @@
 @media (min-width: $tablet-width) {
   .checkbox__label {
     @include font(19px,19px);
+    padding-top: 14px;
+    padding-left: 24px;
+  }
+
+  .checkbox {
+    padding-bottom: 20px;
+    width: 239px;
+  }
+
+  .checkbox__icon {
+    width: 49px;
+    height: 49px;
+
+    &.checkbox__icon::after {
+      left: 8px;
+      bottom: 7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    padding-bottom: 17px;
+    padding-top: 7px;
+    padding-right: 18px;
+  }
+
+  .checkbox__label {
+    @include font(19px,18px);
+    padding-top: 16px;
+    padding-left: 30px;
   }
 }

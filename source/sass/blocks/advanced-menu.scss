@@ -2,7 +2,7 @@
   background-color: #fbfbfb;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position-x: center;
-  background-position-y: -13px;
+  background-position-y: -15px;
   background-repeat: no-repeat;
 
   min-height: 283px;
@@ -15,6 +15,7 @@
   padding-top: 72px;
   padding-bottom: 10px;
   color: $secondary-color;
+  padding-left: 10px;
 
   @include font(27px,30px);
 }
@@ -22,15 +23,23 @@
 @media (min-width: $tablet-width) {
   .advanced-menu__page-title {
     @include font(43px,50px);
+    padding-top: 170px;
   }
 
   .advanced-menu {
     margin-top: -86px;
+    min-height: 643px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .advanced-menu {
-    margin-top: -69px;
+    margin-top: -58px;
+  }
+  .advanced-menu__page-title {
+    @include font(53px,57px);
+    padding-top: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

@@ -1,0 +1,23 @@
+@media (min-width: $desktop-width) {
+  .section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    max-height: 900px;
+  }
+
+  .section-wrapper__first-item {
+    order: 1;
+    width: 50%;
+  }
+
+  .section-wrapper__second-item {
+    order: 3;
+  }
+
+  .section-wrapper__third-item {
+    order: 2;
+  }
+
+}

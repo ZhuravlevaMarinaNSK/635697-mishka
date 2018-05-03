@@ -1,5 +1,5 @@
 .radio {
-  padding-top: 3px;
+  padding-top: 6px;
 }
 
 .radio__control {
@@ -11,10 +11,10 @@
 
   @include font(17px,18px);
   color: $secondary-color;
-  padding-top: 15px;
-  padding-left: 18px;
+  padding-top: 9px;
+  padding-left: 22px;
   padding-right: 30px;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
   word-break: keep-all;
   word-wrap: break-word;
   width: 200px;
@@ -24,8 +24,8 @@
 .radio__icon {
   position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 2px solid $gray-dark;
   border-radius: 50%;
   flex-shrink: 0;
@@ -43,11 +43,11 @@
 .radio__icon::after {
   content: "";
   position: absolute;
-  left: 12px;
-  bottom: 12px;
+  left: 10px;
+  bottom: 9px;
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   opacity: 0;
   background-color: $aqua-form;
   border-radius: 50%;
@@ -58,10 +58,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .radio {
+    padding-top: 0;
+  }
+
   .radio__label {
     width: 100%;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
 
-    @include font(19px,19px);
+  .radio__icon {
+    width: 47px;
+    height: 47px;
+  }
+
+  .radio__icon::after {
+    left: 13px;
+    bottom: 14px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -69,5 +87,9 @@
   .radio {
     width: 100%;
     flex-shrink: 1;
+  }
+
+  .radio__label {
+    padding-bottom: 43px;
   }
 }

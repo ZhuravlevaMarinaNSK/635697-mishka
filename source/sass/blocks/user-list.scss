@@ -7,9 +7,9 @@
 .user-list__item {
   min-height: 79px;
   box-sizing: border-box;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 0;
   padding-right: 15px;
   border-top: 1px solid $gray-light;
 }
@@ -35,18 +35,33 @@
 
   .user-list__link--search {
     font-size: 0;
-    padding: 34px;
+    padding-top: 35px;
+    padding-left: 2px;
+    padding-right: 31px;
     content: url("../img/icon-search.svg");
   }
 
   .user-list__link--cart {
     display: block;
-    padding-left: 35px;
-    padding-top: 34px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 30px;
     max-width: 300px;
   }
 
   .user-list__item {
     padding: 0;
+    padding-left: 31px;
+    border-left: 1px solid $gray-light;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link--search {
+    padding-right: 29px;
+  }
+
+  .user-list__item {
+    padding-left: 33px;
   }
 }
