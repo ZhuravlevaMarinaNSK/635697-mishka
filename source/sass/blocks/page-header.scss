@@ -26,10 +26,10 @@
   .page-header {
     background: linear-gradient($primary-color 52%, #f1f1f1 52%);
     width: 100vw;
+  }
 
-    &--main {
-      background: none;
-    }
+  .page-header-main {
+    background: none;
   }
 }
 
