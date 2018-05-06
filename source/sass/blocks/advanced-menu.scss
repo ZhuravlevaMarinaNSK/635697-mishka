@@ -12,10 +12,11 @@
 .advanced-menu__page-title {
   margin: 0;
   text-align: center;
-  padding-top: 72px;
+  padding-top: 71px;
   padding-bottom: 10px;
   color: $secondary-color;
-  padding-left: 10px;
+  padding-left: 0;
+  letter-spacing: 1.5px;
 
   @include font(27px,30px);
 }
@@ -23,22 +24,24 @@
 @media (min-width: $tablet-width) {
   .advanced-menu__page-title {
     @include font(43px,50px);
-    padding-top: 170px;
+    padding-top: 159px;
+    letter-spacing: 2.5px;
   }
 
   .advanced-menu {
     margin-top: -86px;
-    min-height: 643px;
+    min-height: 632px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advanced-menu {
-    margin-top: -58px;
+    margin-top: -47px;
+    min-height: 631px;
   }
   .advanced-menu__page-title {
     @include font(53px,57px);
-    padding-top: 180px;
+    padding-top: 159px;
     padding-left: 30px;
     padding-right: 30px;
   }

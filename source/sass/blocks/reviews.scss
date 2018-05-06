@@ -9,6 +9,7 @@
   padding-bottom: 23px;
   padding-right: 23px;
   padding-left: 0;
+  letter-spacing: 1.8px;
 
   @include font(25px,30px);
 }
@@ -25,7 +26,7 @@
   margin-left: 0;
   background-color: $primary-color;
   background-image: url("../img/icon-left-arrow.svg");
-  background-position-y: center;
+  background-position-y: 14px;
   background-position-x: 38px;
   background-repeat: no-repeat;
   width: 127px;
@@ -47,8 +48,8 @@
   margin-bottom: 36px;
   background-color: $primary-color;
   background-image: url("../img/icon-right-arrow.svg");
-  background-position-y: center;
-  background-position-x: 36px;
+  background-position-y: 14px;
+  background-position-x: 37px;
   background-repeat: no-repeat;
   width: 127px;
   height: 53px;
@@ -68,10 +69,11 @@
 @media (min-width: $tablet-width) {
   .reviews__title {
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 46px;
     padding-right: 200px;
 
     @include font(43px,50px);
+    letter-spacing: 3px;
   }
 
   .reviews__item {
@@ -86,8 +88,8 @@
 
   .reviews__button {
     position: absolute;
-    top: 80px;
-    right: 0;
+    top: 79px;
+    right: -2px;
     width: 175px;
     padding: 15px 20px;
 
@@ -104,7 +106,8 @@
     height: 53px;
     bottom: -10px;
     right: 85px;
-    background-position-x: 6px;
+    background-position-x: 10px;
+    background-position-y: 10px;
   }
 
   .reviews__next {
@@ -113,7 +116,8 @@
     height: 53px;
     bottom: -10px;
     right: 0;
-    background-position-x: 6px;
+    background-position-x: 12px;
+    background-position-y: 10px;
   }
 }
 
@@ -126,22 +130,32 @@
   .reviews__prev {
     bottom: -6px;
     right: 83px;
+    background-position-x: 9px;
+    background-position-y: 15px;
   }
 
   .reviews__next {
     bottom: -4px;
     right: -3px;
+    background-position-x: 10px;
+    background-position-y: 15px;
   }
 
   .reviews__title {
-    padding-top: 75px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 48px;
     padding-right: 200px;
 
     @include font(53px,57px);
+    letter-spacing: 4.2px;
   }
 
   .reviews {
     padding-bottom: 150px;
+    background-position-x: 53px;
+  }
+
+  .reviews__button {
+    right: -3px;
   }
 }

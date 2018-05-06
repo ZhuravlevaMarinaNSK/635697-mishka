@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Магазин вязаных вещей ручной работы - Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -24,22 +25,26 @@
                   </ul>
                   <ul class="main-nav__list main-nav__list--user user-list">
                     <li class="user-list__item">
-                      <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+                      <a class="user-list__link user-list__link--search" href="#">
+                        <img class="svg user-list__icon user-list__icon--search" src="img/icon-search.svg" width="17.6px" height="17.6px" alt="Поиск по сайту">
+                      Поиск по сайту</a>
                     </li>
                     <li class="user-list__item">
-                      <a class="user-list__link user-list__link--cart" href="#">Корзина:пока пуста</a>
+                      <a class="user-list__link user-list__link--cart" href="#">
+                        <img class="svg user-list__icon user-list__icon--cart user-list__icon--header" src="img/icon-cart.svg" width="20.294px" height="18.849px" alt="Корзина">
+                      Корзина:пока пуста</a>
                     </li>
                   </ul>
                   <ul class="main-nav__list main-nav__list--expanded expanded-list">
-                    <li class="expanded__item">
+                    <li class="expanded-list__item">
                       <a href="#">Новые поступления</a>
                     </li>
-                    <li class="expanded__item">
+                    <li class="expanded-list__item">
                       <a href="#">Распродажа</a>
                     </li>
                   </ul>
                   <ul class="main-nav__list main-nav__list--promo promo-list">
-                    <li class="promo__item">Бесплатная доставка по России</li>
+                    <li class="promo-list__item">Бесплатная доставка по России</li>
                   </ul>
 
                   <button class="main-nav__toggle" type="button">
@@ -69,7 +74,7 @@
               <div class="product__buy">
                 <p class="product__price">1 200 руб.</p>
                 <a class="product__link" href="#">
-                  <img class="product__icon-cart" src="img/icon-cart.svg" width="20" height="19" alt="Корзина">
+                  <img class="svg product__icon" src="img/icon-cart.svg" width="20" height="19" alt="Корзина">
                 </a>
               </div>
             </div>
@@ -85,7 +90,7 @@
               <div class="product__buy">
                 <p class="product__price">690 руб.</p>
                 <a class="product__link" href="#">
-                  <img class="product__icon-cart" src="img/icon-cart.svg" width="20" height="19" alt="Корзина">
+                  <img class="svg product__icont" src="img/icon-cart.svg" width="20" height="19" alt="Корзина">
                 </a>
               </div>
             </div>
@@ -101,7 +106,7 @@
               <div class="product__buy">
                 <p class="product__price">1 500 руб.</p>
                 <a class="product__link" href="#">
-                  <img class="product__icon-cart" src="img/icon-cart.svg" width="20" height="19" alt="Корзина">
+                  <img class="svg product__icon" src="img/icon-cart.svg" width="20" height="19" alt="Корзина">
                 </a>
               </div>
             </div>
@@ -112,30 +117,40 @@
       <div class="production">
         <div class="container">
           <div class="production__card">
-            <img class="production__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео о производстве игрушек">
+            <div class="production__video">
+              <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео о производстве игрушек">
+            </div>
             <h2 class="production__title">Процесс производства</h2>
             <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
             <a class="button production__button" href="form.html">Сделать заказ</a>
           </div>
         </div>
       </div>
-    </div>
+
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper  container">
-        <a class="page-footer__logo logo">
-            <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+        <a class="page-footer__logo icon">
+          <img class="svg icon__item icon__item--logo-mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
         </a>
         <div class="page-footer__social social">
-          <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
-          <a class="social__link social__link--facebook" href="#">Мы в Фэйсбук</a>
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social__link social__link--instagram icon" href="#">
+            <img class="svg icon__item icon__item--insta" src="img/icon-insta.svg" width="22" height="21" alt="Instagram">
+          Мы в Инстаграм</a>
+          <a class="social__link social__link--facebook icon" href="#">
+            <img class="svg icon__item icon__item--fb" src="img/icon-fb.svg" width="15" height="28" alt="Facebook">
+          Мы в Фэйсбук</a>
+          <a class="social__link social__link--twitter icon" href="#">
+            <img class="svg icon__item icon__item--twitter" src="img/icon-twitter.svg" width="23" height="20" alt="Twitter">
+          Мы в Твиттере</a>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link icon" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="svg icon__item icon__item--htmlacademy" src="img/htmlacademy.svg" width="27" height="34" alt="Twitter">
+          HTML Academy</a>
         </div>
       </div>
     </footer>

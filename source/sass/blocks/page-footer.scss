@@ -37,7 +37,8 @@
   .page-footer__wrapper {
     justify-content: space-between;
     align-items: center;
-    padding-top: 42px;
+    padding-top: 37px;
+    padding-bottom: 40px;
   }
 
   .page-footer__copyright {
@@ -51,7 +52,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-top: 47px;
+    padding-top: 38px;
   }
 
   .page-footer__copyright {

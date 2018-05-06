@@ -9,7 +9,6 @@
   min-height: 103px;
   position: relative;
 
-
   &.products__item--interior {
     background-color: $aqua-light;
   }
@@ -19,15 +18,64 @@
   }
 }
 
+.products__item--interior::after,
+.products__item--lego::after {
+  opacity: 0.5;
+  position: absolute;
+}
+
+.products__item--interior::after {
+  content: "";
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  right: 37px;
+  top: 22px;
+  width: 40px;
+  height: 62px;
+}
+
+.products__item--lego::after {
+  content: url("../img/icon-toy.svg");
+  width: 60px;
+  height: 60px;
+  right: 28px;
+  top: 20px;
+}
+
+.products__item--interior:hover::after,
+.products__item--interior:focus::after {
+  height: 67px;
+  top: 20px;
+}
+
+.products__item--lego:hover::after,
+.products__item--lego:focus::after {
+  height: 65px;
+  top: 20px;
+}
+
+.products__item--interior:active::after {
+  height: 67px;
+  top: 20px;
+  opacity: 0.3;
+}
+
+.products__item--lego:active::after {
+  height: 65px;
+  top: 20px;
+  opacity: 0.3;
+}
+
 .products__link {
   display: inline-block;
   color: $primary-color;
 
   @include font(19px,24px);
+  letter-spacing: 1.1px;
   padding-top: 25px;
   padding-right: 120px;
   padding-left: 0;
-  padding-bottom: 5px;
+  padding-bottom: 14px;
   word-wrap: break-word;
 
   &:active {
@@ -40,8 +88,8 @@
     background-color: #fbfbfb;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 49px;
+    padding-right: 49px;
     min-width: 668px;
   }
 
@@ -55,12 +103,23 @@
     padding: 0;
     min-width: 50%;
     max-width: 50%;
+    padding-bottom: 4px;
+  }
+
+  .products__item--interior::after {
+    top: 29px;
+  }
+
+  .products__item--lego::after {
+    top: 31px;
+    right: 35px;
   }
 
   .products__link {
     display: inline-block;
     padding-right: 140px;
-    padding-left: 37px;
+    padding-left: 36px;
+    padding-top: 28px;
     box-sizing: border-box;
 
     @include font(20px,30px);
@@ -70,11 +129,22 @@
 @media (min-width: $desktop-width) {
   .products__link {
     padding-right: 400px;
+    padding-left: 39px;
   }
 
   .products {
     width: 1050px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .products__item--interior::after {
+    top: 30px;
+    right: 35px;
+  }
+
+  .products__item--lego::after {
+    top: 32px;
+    right: 30px;
   }
 }

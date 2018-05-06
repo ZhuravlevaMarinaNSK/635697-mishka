@@ -11,13 +11,13 @@
 
     @include font(15px,24px);
     z-index: 3;
-    padding-top: 26px;
+    padding-top: 15px;
     text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-list {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 }

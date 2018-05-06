@@ -23,7 +23,7 @@
 
 .form-order__obligatory {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   padding-right: 5px;
 
   @include font(14px,16px);
@@ -32,7 +32,8 @@
 
 .form-order__button {
   margin-bottom: 54px;
-  width: 93%;
+  width: 100%;
+  min-height: 52px;
 
   @include font(17px,17px);
   font-weight: 700;
@@ -42,7 +43,7 @@
 @media (min-width: $tablet-width) {
   .form-order__small-text {
     color: $gray-dark;
-    padding-top: 46px;
+    padding-top: 39px;
 
     @include font(17px,30px);
   }
@@ -57,7 +58,7 @@
     }
 
     &.form-order__wrapper--tablet {
-      padding-top: 38px;
+      padding-top: 36px;
     }
   }
 
@@ -97,7 +98,7 @@
       width: 700px;
       margin-left: auto;
       margin-right: auto;
-      padding-left: 21px;
+      padding-left: 4px;
       padding-top: 35px;
     }
   }

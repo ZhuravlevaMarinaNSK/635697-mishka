@@ -1,6 +1,7 @@
 .checkbox {
-  padding-bottom: 18px;
-  padding-top: 4px;
+  padding-bottom: 16px;
+  padding-left: 3px;
+  padding-top: 5px;
 }
 
 .checkbox__control {
@@ -25,8 +26,8 @@
 .checkbox__icon {
   position: relative;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   border: 2px solid $gray-dark;
   flex-shrink: 0;
 
@@ -55,12 +56,14 @@
 @media (min-width: $tablet-width) {
   .checkbox__label {
     @include font(19px,19px);
-    padding-top: 14px;
-    padding-left: 24px;
+    padding-top: 13px;
+    padding-left: 25px;
+    padding-bottom: 19px;
   }
 
   .checkbox {
-    padding-bottom: 20px;
+    padding-bottom: 19px;
+    padding-left: 0;
     width: 239px;
   }
 

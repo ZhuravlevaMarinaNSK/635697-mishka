@@ -1,7 +1,7 @@
 .about-us {
   color: $secondary-color;
   background-color: $primary-color;
-  padding-bottom: 38px;
+  padding-bottom: 35px;
   padding-top: 29px;
 }
 
@@ -11,6 +11,7 @@
   padding-right: 30px;
   padding-left: 0;
   padding-bottom: 20px;
+  letter-spacing: 0.87px;
 
   @include font(25px,30px);
 }
@@ -26,12 +27,15 @@
 }
 
 .about-us__item {
-  padding-top: 60px;
+  padding-top: 63px;
   padding-bottom: 20px;
   padding-right: 30px;
   position: relative;
+  letter-spacing: 1.2px;
 
   &.about-us__item--flower {
+    padding-top: 57px;
+
     &::before {
       content: "";
       width: 32px;
@@ -51,7 +55,7 @@
       background-image: url("../img/icon-feature-money.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 6px;
+      top: 10px;
       left: 1px;
     }
   }
@@ -65,11 +69,15 @@
       background-repeat: no-repeat;
       position: absolute;
       top: 14px;
-      left: 8px;
+      left: 9px;
     }
   }
 
   &.about-us__item--ball {
+    padding-top: 54px;
+    padding-left: 2px;
+    letter-spacing: 0.85px;
+
     &::before {
       content: "";
       width: 34px;
@@ -77,7 +85,7 @@
       background-image: url("../img/icon-feature-ball.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 7px;
+      top: 2px;
       left: 5px;
     }
   }
@@ -90,7 +98,7 @@
       background-image: url("../img/icon-feature-rocket.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
+      top: 13px;
       left: -5px;
     }
   }
@@ -103,15 +111,15 @@
       background-image: url("../img/icon-feature-gift.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 11px;
+      left: 4px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-bottom: 28px;
+    padding-bottom: 31px;
   }
 
   .about-us__wrapper {
@@ -129,8 +137,8 @@
 
   .about-us__title {
     @include font(43px,50px);
-    padding-top: 78px;
-    padding-bottom: 35px;
+    padding-top: 37px;
+    padding-bottom: 37px;
   }
 
   .about-us__item {
@@ -139,6 +147,62 @@
 
     @include font(20px,22px);
     font-weight: 700;
+
+    &.about-us__item--flower {
+
+      &::before {
+        top: 1px;
+        left: 11px;
+      }
+    }
+
+    &.about-us__item--banknote {
+      padding-top: 59px;
+      padding-left: 2px;
+
+      &::before {
+        top: 6px;
+        left: 3px;
+      }
+    }
+
+    &.about-us__item--heart {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 12px;
+        left: 10px;
+      }
+    }
+
+    &.about-us__item--ball {
+      padding-top: 56px;
+
+      &::before {
+        top: 5px;
+      }
+    }
+
+    &.about-us__item--rocket {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 10px;
+        left: -3px;
+      }
+    }
+
+    &.about-us__item--gift {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 8px;
+        left: 5px;
+      }
+    }
   }
 }
 
@@ -154,15 +218,69 @@
     width: 67%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 25px;
+    padding-left: 33px;
     padding-top: 115px;
+    letter-spacing: 1.4px;
   }
 
   .about-us__item {
     min-height: 55px;
+    padding-left: 5px;
+
+    &.about-us__item--flower {
+
+      &::before {
+        top: 2px;
+        left: 14px;
+      }
+    }
+
+    &.about-us__item--banknote {
+
+      &::before {
+        left: 6px;
+      }
+    }
+
+    &.about-us__item--heart {
+      padding-left: 4px;
+
+      &::before {
+        top: 11px;
+        left: 13px;
+      }
+    }
+
+    &.about-us__item--ball {
+      padding-left: 3px;
+
+      &::before {
+        left: 6px;
+      }
+    }
+
+    &.about-us__item--rocket {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 10px;
+        left: -3px;
+      }
+    }
+
+    &.about-us__item--gift {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 8px;
+        left: 5px;
+      }
+    }
   }
 
   .about-us {
-    padding-bottom: 32px;
+    padding-bottom: 39px;
   }
 }

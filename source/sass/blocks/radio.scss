@@ -10,9 +10,10 @@
   display: inline-block;
 
   @include font(17px,18px);
+  letter-spacing: 0.2px;
   color: $secondary-color;
   padding-top: 9px;
-  padding-left: 22px;
+  padding-left: 26px;
   padding-right: 30px;
   padding-bottom: 8px;
   word-break: keep-all;
@@ -23,6 +24,7 @@
 
 .radio__icon {
   position: relative;
+  margin-left: 5px;
   display: block;
   width: 35px;
   height: 35px;
@@ -43,8 +45,8 @@
 .radio__icon::after {
   content: "";
   position: absolute;
-  left: 10px;
-  bottom: 9px;
+  left: 8px;
+  bottom: 10px;
   display: block;
   width: 16px;
   height: 16px;
@@ -64,6 +66,7 @@
 
   .radio__label {
     width: 100%;
+    letter-spacing: 2px;
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
@@ -73,6 +76,7 @@
   .radio__icon {
     width: 47px;
     height: 47px;
+    margin-left: 0;
   }
 
   .radio__icon::after {

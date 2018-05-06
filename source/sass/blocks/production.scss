@@ -1,7 +1,7 @@
 .production {
   background-color: $primary-color;
   padding-top: 0;
-  padding-bottom: 28px;
+  padding-bottom: 29px;
   position: relative;
 }
 
@@ -22,6 +22,28 @@
   margin-left: auto;
   margin-right: auto;
   order: 2;
+  position: relative;
+
+  &::after {
+    content: url("../img/icon-play.svg");
+    display: block;
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 38px;
+    left: 81px;
+    z-index: 10;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scale(1.2);
+  }
+
+  &:active::after {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__card {
@@ -30,40 +52,64 @@
   flex-wrap: wrap;
   border: 1px solid $gray-light;
   margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $gray-light;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    border: 1px solid $gray-light;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__title {
   margin: 0;
   order: 1;
 
-  padding-top: 23px;
-  padding-left: 90px;
-  padding-bottom: 22px;
+  padding-top: 25px;
+  padding-left: 91px;
+  padding-bottom: 24px;
   padding-right: 22px;
 
   @include font(17px,24px);
+  letter-spacing: 1px;
+  position: relative;
+
+  &::before {
+    content: url("../img/icon-video.svg");
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 31px;
+    left: 35px;
+  }
 }
 
 .production__description {
   font-weight: 400;
   order: 3;
 
-  @include font(13px,24px);
-  padding-top: 15px;
-  padding-left: 33px;
-  padding-bottom: 36px;
+  @include font(13px,25px);
+  padding-top: 11px;
+  padding-left: 35px;
+  padding-bottom: 9px;
+  padding-right: 34px;
 }
 
 .production__button {
   order: 4;
   margin-bottom: 30px;
-  width: 192px;
-  margin-left: 12%;
+  width: 194px;
+  margin-left: 13%;
 }
 
 @media (min-width: $tablet-width) {
   .production {
     padding-bottom: 32px;
+    margin-top: -4px;
   }
 
   .production__card {
@@ -78,6 +124,11 @@
     margin-right: auto;
     height: 455px;
     width: 100%;
+
+    &::after {
+      top: 189px;
+      left: 284px;
+    }
   }
 
   .production__title {
@@ -86,6 +137,11 @@
     padding-top: 38px;
     padding-bottom: 17px;
     order: 2;
+
+    &::before {
+      top: 34px;
+      left: 42px;
+    }
   }
 
   .production__description {
@@ -94,24 +150,27 @@
     padding-top: 0;
     padding-right: 40px;
     padding-bottom: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 17px;
   }
 
   .production__button {
     width: 87.5%;
     margin: auto;
+    min-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
     padding-bottom: 71px;
+    margin-top: 2px;
   }
 
   .production__card {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 0;
+    height: 455px;
   }
 
   .production__wrapper {
@@ -119,9 +178,14 @@
   }
 
   .production__title {
-    padding-top: 97px;
-    padding-left: 38px;
+    padding-top: 96px;
+    padding-left: 60px;
     width: 21%;
+
+    &::before {
+      top: 42px;
+      left: 62px;
+    }
   }
 
   .production__video {
@@ -129,17 +193,22 @@
     margin-right: 0;
     height: 455px;
     width: 65%;
+
+    &::after {
+      top: 190px;
+      left: 290px;
+    }
   }
 
   .production__button {
     width: 22%;
     margin: auto;
-    margin-top: 26px;
+    margin-top: 10px;
     margin-right: 55px;
   }
 
   .production__description {
-    padding-left: 36px;
+    padding-left: 60px;
     width: 22%;
   }
 }

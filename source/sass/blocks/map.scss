@@ -3,15 +3,33 @@
   margin-right: auto;
   width: 320px;
   padding: 0;
+  position: relative;
+
+  &::after {
+    content: url("../img/icon-map-pin.svg");
+    width: 66px;
+    height: 101px;
+    position: absolute;
+    top: 145px;
+    left: 138px;
+  }
 }
 
 .map__img {
   background-color: $primary-color;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .map {
-    margin-bottom: 30px;
+
+    &::after {
+      top: 140px;
+      left: 161px;
+    }
+  }
+
+  .map__img {
+    height: 460px;
   }
 }
 
@@ -19,11 +37,16 @@
   .map {
     position: relative;
     margin-bottom: 25px;
+
+    &::after {
+      top: -234px;
+      left: 402px;
+    }
   }
 
   .map__img {
     position: absolute;
-    top: -370px;
-    left: 55%;
+    top: -383px;
+    left: 50.5%;
   }
 }

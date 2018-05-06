@@ -5,10 +5,11 @@
 
 .week-product__title {
   margin: 0;
-  padding-top: 27px;
-  padding-left: 0;
+  padding-top: 26px;
+  padding-left: 1px;
   padding-right: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
+  letter-spacing: 1.3px;
 
   @include font(25px,30px);
 }
@@ -18,6 +19,7 @@
   text-transform: uppercase;
 
   @include font(17px,20px);
+  letter-spacing: 0.4px;
   padding-left: 0;
   padding-bottom: 5px;
   padding-right: 5px;
@@ -26,7 +28,7 @@
 .week-product__describtion {
   display: inline-block;
   margin-bottom: 0;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-right: 3px;
   padding-left: 0;
   color: $gray-dark;
@@ -46,7 +48,7 @@
 
 .week-product__image {
   order: 3;
-  margin-top: 18px;
+  margin-top: 19px;
   margin-bottom: 21px;
   margin-left: 0;
 }
@@ -54,13 +56,14 @@
 .week-product__price {
   order: 4;
   display: inline-block;
-  padding-top: 4px;
+  padding-top: 3px;
   padding-bottom: 25px;
-  padding-left: 68px;
+  padding-left: 67px;
   padding-right: 10px;
   color: $gray-dark;
 
   @include font(17px,24px);
+  letter-spacing: 0.5px;
 }
 
 .week-product__wrapper {
@@ -80,29 +83,32 @@
     align-items: flex-end;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 33px;
+    padding-top: 31px;
   }
 
   .week-product__title {
     @include font(43px,50px);
-    flex-basis: 420px;
+    flex-basis: 440px;
+    letter-spacing: 2px;
   }
 
   .week-product__promo {
     @include font(17px,17px);
-    width: 120px;
+    width: 110px;
     height: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     text-align: center;
+    letter-spacing: 1px;
   }
 
   .week-product__describtion {
     padding-top: 27px;
     padding-right: 3px;
     padding-bottom: 20px;
-    width: 50%;
+    width: 45%;
 
     @include font(17px,30px);
+    letter-spacing: 0.2px;
   }
 
   .week-product__image {
@@ -111,8 +117,10 @@
 
   .week-product__price {
     @include font(20px,24px);
+    width: 30%;
     display: block;
-    padding-top: 45px;
+    padding-top: 46px;
+    padding-left: 74px;
     padding-bottom: 35px;
   }
 
@@ -121,26 +129,28 @@
   }
 
   .week-product__button {
-    width: 43%;
+    width: 44%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .week-product__promo {
-    margin-top: 64px;
+    margin-top: 60px;
 
     @include font(17px,17px);
-    flex-basis: 17%;
+    flex-basis: 16.5%;
     order: 1;
-    padding-left: 20px;
+    padding-left: 31px;
     padding-right: 33px;
     box-sizing: border-box;
   }
 
   .week-product__title {
     @include font(53px,57px);
+    letter-spacing: 2.6px;
     margin-right: auto;
     margin-top: 20px;
+    padding-top: 25px;
     flex-basis: 530px;
     z-index: 3;
     order: 2;
@@ -154,6 +164,8 @@
 
   .week-product__describtion {
     margin-bottom: 20px;
+    letter-spacing: 0.2px;
+    width: 37%;
   }
 
   .week-product__characters {
@@ -167,10 +179,11 @@
   }
   .week-product__price {
     padding-top: 53px;
-    padding-left: 72px;
+    padding-left: 75px;
     padding-bottom: 34px;
   }
   .week-product__button {
-    width: 38%;
+    width: 37%;
+    margin-left: 3px;
   }
 }
