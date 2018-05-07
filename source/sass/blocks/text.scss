@@ -59,6 +59,9 @@
 .text__icon--phone {
   color: $secondary-color;
   opacity: 0.2;
+  position: absolute;
+  right: 7px;
+  top: -3px;
 
   &:hover,
   &:focus {
@@ -69,12 +72,6 @@
     color: $aqua-icons;
     opacity: 0.3;
   }
-}
-
-.text__icon--phone {
-  position: absolute;
-  right: 7px;
-  top: -3px;
 }
 
 .text__icon--mail {
