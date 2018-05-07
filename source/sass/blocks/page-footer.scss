@@ -32,6 +32,7 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: block;
+    cursor: pointer;
   }
 
   .page-footer__wrapper {
