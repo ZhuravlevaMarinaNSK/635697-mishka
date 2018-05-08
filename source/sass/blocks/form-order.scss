@@ -95,11 +95,15 @@
     padding-top: 42px;
 
     &.form-order__wrapper--desktop {
-      width: 700px;
+      width: 722px;
       margin-left: auto;
       margin-right: auto;
       padding-left: 4px;
       padding-top: 35px;
     }
+  }
+
+  .form-order__button {
+    margin-left: 19px;
   }
 }
