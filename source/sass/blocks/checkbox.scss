@@ -43,14 +43,15 @@
   &.checkbox__icon::after {
     content: url("../img/icon-tick.svg");
     position: absolute;
-    left: 2px;
-    bottom: 5px;
+    left: 0;
+    bottom: 1px;
     opacity: 0;
   }
 }
 
 .checkbox__control:checked ~ .checkbox__icon::after {
   opacity: 1;
+  transform: scale(0.7);
 }
 
 @media (min-width: $tablet-width) {
@@ -75,6 +76,10 @@
       left: 8px;
       bottom: 7px;
     }
+  }
+
+  .checkbox__control:checked ~ .checkbox__icon::after {
+    transform: scale(1);
   }
 }
 

@@ -96,7 +96,7 @@
     @include font(17px,17px);
     width: 110px;
     height: 30px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     text-align: center;
     letter-spacing: 1px;
   }
@@ -121,7 +121,7 @@
     display: block;
     padding-top: 46px;
     padding-left: 74px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
   }
 
   .week-product__wrapper {
@@ -129,7 +129,8 @@
   }
 
   .week-product__button {
-    width: 44%;
+    width: 43.7%;
+    min-height: 52px;
   }
 }
 
@@ -166,6 +167,8 @@
     margin-bottom: 20px;
     letter-spacing: 0.2px;
     width: 37%;
+    padding-top: 28px;
+    padding-left: 2px;
   }
 
   .week-product__characters {

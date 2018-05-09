@@ -33,7 +33,7 @@
   @include font(13px,30px);
   margin: 0;
   padding-left: 29px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   padding-right: 10px;
   font-weight: 400;
 }
@@ -93,7 +93,7 @@
     padding-left: 10px;
   }
 
-  .product__icon-cart {
+  .product__icon {
     bottom: 25px;
     right: 5px;
   }
@@ -148,7 +148,7 @@
     overflow: hidden;
   }
 
-  .product__icon-cart {
+  .product__icon {
     bottom: 30px;
   }
 
