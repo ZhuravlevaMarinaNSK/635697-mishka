@@ -134,6 +134,12 @@
       width: 60%;
     }
 
+    &.main-nav__list--main-catalog {
+      order: 3;
+      z-index: 3;
+      width: 60%;
+    }
+
     &.main-nav__list--user {
       order: 2;
       width: 70%;
@@ -167,6 +173,13 @@
     &.main-nav__list--main {
       order: 1;
       width: 37%;
+      margin-right: auto;
+      padding-top: 7px;
+    }
+
+    &.main-nav__list--main-catalog {
+      order: 1;
+      width: 36.5%;
       margin-right: auto;
       padding-top: 7px;
     }

@@ -60,6 +60,14 @@
     padding-top: 25px;
     padding-left: 2px;
     padding-bottom: 35px;
+
+    &.site-list__item--catalog {
+      padding-left: 0;
+    }
+
+    &.site-list__item--menu-catalog {
+      padding-top: 22px;
+    }
   }
 
   .site-list__item.site-list__item:last-of-type {
