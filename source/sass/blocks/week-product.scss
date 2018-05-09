@@ -49,7 +49,7 @@
 .week-product__image {
   order: 3;
   margin-top: 19px;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
   margin-left: 0;
 }
 
@@ -83,7 +83,7 @@
     align-items: flex-end;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 31px;
+    padding-top: 23px;
   }
 
   .week-product__title {
@@ -113,6 +113,8 @@
 
   .week-product__image {
     order: 6;
+    margin-top: 51px;
+    margin-left: 31px;
   }
 
   .week-product__price {
@@ -160,7 +162,7 @@
   .week-product {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 90px;
+    padding-top: 82px;
   }
 
   .week-product__describtion {
@@ -179,6 +181,10 @@
     max-height: 700px;
     margin-left: 175px;
     order: 3;
+  }
+
+  .week-product__image {
+    margin-top: -113px;
   }
 
   .week-product__price {

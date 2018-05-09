@@ -44,5 +44,6 @@
 @media (min-width: $tablet-width) {
   .icon__item--logo-mobile {
     padding-top: 10px;
+    transform: scale(1.2);
   }
 }

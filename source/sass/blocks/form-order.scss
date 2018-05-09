@@ -80,6 +80,10 @@
     flex-grow: 0;
     box-sizing: border-box;
   }
+
+  .form-order {
+    margin-top: 34px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -109,5 +113,9 @@
 
   .form-order__obligatory {
     padding-right: 10px;
+  }
+
+  .form-order {
+    margin-top: -14px;
   }
 }

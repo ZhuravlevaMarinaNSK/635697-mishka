@@ -85,6 +85,7 @@
 
 @media (min-width: $tablet-width) {
   .products {
+    position: relative;
     background-color: #fbfbfb;
     margin-right: auto;
     margin-left: auto;
@@ -101,6 +102,7 @@
   .products__item {
     margin: 0;
     padding: 0;
+    min-height: 111px;
     min-width: 50%;
     max-width: 50%;
     padding-bottom: 4px;
