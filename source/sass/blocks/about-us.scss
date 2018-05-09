@@ -1,7 +1,7 @@
 .about-us {
   color: $secondary-color;
   background-color: $primary-color;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   padding-top: 29px;
 }
 
@@ -9,7 +9,9 @@
   margin: 0;
   padding-top: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-left: 0;
+  padding-bottom: 20px;
+  letter-spacing: 0.87px;
 
   @include font(25px,30px);
 }
@@ -18,25 +20,30 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 0;
+  padding-top: 9px;
 
   @include font(17px,20px);
 }
 
 .about-us__item {
-  padding-top: 58px;
-  padding-bottom: 25px;
+  padding-top: 63px;
+  padding-bottom: 20px;
   padding-right: 30px;
   position: relative;
+  letter-spacing: 1.2px;
 
   &.about-us__item--flower {
+    padding-top: 57px;
+
     &::before {
       content: "";
       width: 32px;
       height: 37px;
       background-image: url("../img/icon-feature-flower.svg");
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 3px;
+      left: 9px;
     }
   }
 
@@ -49,7 +56,7 @@
       background-repeat: no-repeat;
       position: absolute;
       top: 10px;
-      left: 5px;
+      left: 1px;
     }
   }
 
@@ -61,12 +68,16 @@
       background-image: url("../img/icon-feature-heart.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 14px;
+      left: 9px;
     }
   }
 
   &.about-us__item--ball {
+    padding-top: 54px;
+    padding-left: 2px;
+    letter-spacing: 0.85px;
+
     &::before {
       content: "";
       width: 34px;
@@ -74,7 +85,7 @@
       background-image: url("../img/icon-feature-ball.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
+      top: 2px;
       left: 5px;
     }
   }
@@ -87,8 +98,8 @@
       background-image: url("../img/icon-feature-rocket.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 13px;
+      left: -5px;
     }
   }
 
@@ -100,19 +111,25 @@
       background-image: url("../img/icon-feature-gift.svg");
       background-repeat: no-repeat;
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 11px;
+      left: 4px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-bottom: 31px;
+    padding-top: 72px;
+  }
+
   .about-us__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     @include font(20px,22px);
+    font-weight: 700;
   }
 
   .about-us__list {
@@ -121,10 +138,71 @@
 
   .about-us__title {
     @include font(43px,50px);
+    padding-top: 37px;
+    padding-bottom: 37px;
   }
 
   .about-us__item {
     min-height: 55px;
+    padding-bottom: 40px;
+
+    @include font(20px,22px);
+    font-weight: 700;
+
+    &.about-us__item--flower {
+      &::before {
+        top: 1px;
+        left: 11px;
+      }
+    }
+
+    &.about-us__item--banknote {
+      padding-top: 59px;
+      padding-left: 2px;
+
+      &::before {
+        top: 6px;
+        left: 3px;
+      }
+    }
+
+    &.about-us__item--heart {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 12px;
+        left: 10px;
+      }
+    }
+
+    &.about-us__item--ball {
+      padding-top: 56px;
+
+      &::before {
+        top: 5px;
+      }
+    }
+
+    &.about-us__item--rocket {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 10px;
+        left: -3px;
+      }
+    }
+
+    &.about-us__item--gift {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 8px;
+        left: 5px;
+      }
+    }
   }
 }
 
@@ -140,10 +218,68 @@
     width: 67%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
+    padding-left: 33px;
+    padding-top: 115px;
+    letter-spacing: 1.4px;
   }
 
   .about-us__item {
     min-height: 55px;
+    padding-left: 5px;
+
+    &.about-us__item--flower {
+      &::before {
+        top: 2px;
+        left: 14px;
+      }
+    }
+
+    &.about-us__item--banknote {
+      &::before {
+        left: 6px;
+      }
+    }
+
+    &.about-us__item--heart {
+      padding-left: 4px;
+
+      &::before {
+        top: 11px;
+        left: 13px;
+      }
+    }
+
+    &.about-us__item--ball {
+      padding-left: 3px;
+
+      &::before {
+        left: 6px;
+      }
+    }
+
+    &.about-us__item--rocket {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 10px;
+        left: -3px;
+      }
+    }
+
+    &.about-us__item--gift {
+      padding-top: 60px;
+      padding-left: 2px;
+
+      &::before {
+        top: 8px;
+        left: 5px;
+      }
+    }
+  }
+
+  .about-us {
+    padding-bottom: 39px;
+    padding-top: 30px;
   }
 }

@@ -1,17 +1,48 @@
-.icon {
-  fill: $aqua-icons;
+.icon__item--htmlacademy {
+  color: #63d1bb;
 
-  &.icon--interior {
-    top: 22px;
-    right: 35px;
+  &:hover,
+  &:focus {
+    color: #46c1ae;
   }
 
-  &.icon--lego {
-    top: 22px;
-    right: 28px;
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
   }
 }
 
-.icon--products {
-  position: absolute;
+.icon__item--insta {
+  padding-top: 6px;
+}
+
+.icon__item--fb {
+  padding-top: 6px;
+}
+
+.icon__item--twitter {
+  padding-top: 6px;
+}
+
+.icon__item--logo-mobile {
+  padding-left: 10px;
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link--twitter img {
+  max-width: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .icon__item--logo-mobile {
+    padding-top: 10px;
+  }
 }

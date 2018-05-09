@@ -1,12 +1,16 @@
 .textarea__control {
   font-weight: 400;
+  margin-left: 3px;
 
   @include font(17px,18px);
   color: $gray-dark;
   padding-top: 15px;
   padding-left: 15px;
+  padding-right: 38px;
   border: 2px solid $secondary-color;
-  flex-grow: 1;
+  margin-top: 6px;
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -26,6 +30,18 @@
   }
 
   .textarea__control {
-    @include font(19px,19px);
+    @include font(19px,18px);
+    width: 100%;
+    padding-top: 12px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea__control {
+    width: 97%;
+    padding-bottom: 0;
+    margin-left: 2px;
+    margin-top: 8px;
   }
 }

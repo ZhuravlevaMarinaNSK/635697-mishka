@@ -1,22 +1,40 @@
-.map {
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  padding: 0;
-}
-
 .map__img {
   background-color: $primary-color;
+  width: 100%;
+  height: 457px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: 100%;
+
+    &::after {
+      top: 140px;
+      left: 161px;
+    }
+  }
+
+  .map__img {
+    width: 100%;
+    height: 460px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .map {
     position: relative;
+    margin-bottom: 25px;
+
+    &::after {
+      top: -234px;
+      left: 402px;
+    }
   }
 
   .map__img {
     position: absolute;
-    top: -370px;
-    left: 55%;
+    width: 525px;
+    top: -383px;
+    left: 50.5%;
   }
 }

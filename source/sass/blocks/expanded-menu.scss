@@ -15,14 +15,26 @@
     width: 35%;
   }
 
-  .expanded__item {
-    padding-top: 20px;
+  .expanded-list__item {
+    box-sizing: border-box;
+    padding-top: 16px;
     width: 50%;
+    padding-right: 5px;
+    padding-left: 1px;
   }
 
-  .expanded__item a {
+  .expanded-list__item a {
     @include font(17px,24px);
     color: $secondary-color;
     font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: $secondary-color-30;
+    }
+
+    &:active {
+      color: $secondary-color-60;
+    }
   }
 }

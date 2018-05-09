@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Магазин вязаных вещей ручной работы - Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,7 +16,7 @@
                     <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
                   </a>
                   <ul class="main-nav__list main-nav__list--main site-list">
-                    <li class="site-list__item">
+                    <li class="site-list__item site-list__item--menu-catalog">
                       <a class="site-list__link" href="catalog.html">Каталог товаров</a>
                     </li>
                     <li class="site-list__item">
@@ -24,22 +25,26 @@
                   </ul>
                   <ul class="main-nav__list main-nav__list--user user-list">
                     <li class="user-list__item">
-                      <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+                      <a class="user-list__link user-list__link--search" href="#">
+                        <img class="svg user-list__icon user-list__icon--search" src="img/icon-search.svg" width="17.6px" height="17.6px" alt="Поиск по сайту">
+                      Поиск по сайту</a>
                     </li>
                     <li class="user-list__item">
-                      <a class="user-list__link user-list__link--cart" href="#">Корзина:пока пуста</a>
+                      <a class="user-list__link user-list__link--cart" href="#">
+                        <img class="svg user-list__icon user-list__icon--cart user-list__icon--header" src="img/icon-cart.svg" width="20.294px" height="18.849px" alt="Корзина">
+                      Корзина:пока пуста</a>
                     </li>
                   </ul>
                   <ul class="main-nav__list main-nav__list--expanded expanded-list">
-                    <li class="expanded__item">
+                    <li class="expanded-list__item">
                       <a href="#">Новые поступления</a>
                     </li>
-                    <li class="expanded__item">
+                    <li class="expanded-list__item">
                       <a href="#">Распродажа</a>
                     </li>
                   </ul>
                   <ul class="main-nav__list main-nav__list--promo promo-list">
-                    <li class="promo__item">Бесплатная доставка по России</li>
+                    <li class="promo-list__item">Бесплатная доставка по России</li>
                   </ul>
 
                   <button class="main-nav__toggle" type="button">
@@ -82,11 +87,11 @@
           </fieldset>
         </div>
 
-        <div class="background--no-mobile">
+        <div class="background-no-mobile">
           <div class="container">
             <fieldset class="form-order__fieldset fieldset fieldset--checkbox">
               <div class="form-order__wrapper">
-                <h2 class="fieldset__title">Цвет</h2>
+                <h2 class="fieldset__title fieldset__title--color">Цвет</h2>
                 <div class="fieldset__wrapper fieldset__wrapper--desktop">
                   <div class="fieldset__item checkbox">
                     <input class="checkbox__control" type="checkbox" id="white" name="white" checked>
@@ -126,11 +131,11 @@
         <div class="container">
           <fieldset class="form-order__fieldset fieldset fieldset--text">
             <div class="form-order__wrapper">
-              <h2 class="fieldset__title">ФИО</h2>
+              <h2 class="fieldset__title fieldset__title--name">ФИО</h2>
               <div class="fieldset__wrapper">
                 <div class="fieldset__item text">
-                  <input class="text__control" type="text" id="name" placeholder="Введите ваше имя*" required>
-                  <label class="text__label" for="name">Имя:</label>
+                  <input class="text__control text__control--name" type="text" id="name" placeholder="Введите ваше имя*" required>
+                  <label class="text__label text__label--name" for="name">Имя:</label>
                 </div>
                 <div class="fieldset__item text">
                   <input class="text__control" type="text" id="last-name" placeholder="Укажите фамилию*" required>
@@ -144,14 +149,15 @@
             </div>
           </fieldset>
         </div>
-        <div class="background--no-mobile">
+        <div class="background-no-mobile">
           <div class="container">
             <fieldset class="form-order__fieldset fieldset fieldset--phone">
               <div class="form-order__wrapper">
-                <h2 class="fieldset__title">Тел</h2>
+                <h2 class="fieldset__title fieldset__title--phone">Тел</h2>
                 <div class="fieldset__wrapper">
-                  <div class="fieldset__item text">
-                    <input class="text__control" type="tel" id="tel" placeholder="+7 XXX XX XX*" pattern="{+7}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                  <div class="fieldset__item text text--phone">
+                    <input class="text__control text__control--phone" type="tel" id="tel" placeholder="+7 XXX XX XX*" pattern="{+7}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                    <img class="svg text__icon text__icon--phone" src="img/icon-phone.svg" width="24.829px" height="24.333px" alt="Телефон">
                     <label class="text__label visually-hidden" for="tel">Телефон</label>
                   </div>
                 </div>
@@ -160,11 +166,12 @@
 
 
             <fieldset class="form-order__fieldset fieldset fieldset--email">
-              <div class="form-order__wrapper">
+              <div class="form-order__wrapper form-order__wrapper--email">
                 <h2 class="fieldset__title fieldset__title--email">E-mail</h2>
                 <div class="fieldset__wrapper">
-                  <div class="fieldset__item text">
-                    <input class="text__control" type="email" id="e-mail" placeholder="Ваш Email*" pattern="[A-Za-z]@[A-Za-z].ru" required>
+                  <div class="fieldset__item text__icon text text--email">
+                    <input class="text__control text__control--email" type="email" id="e-mail" placeholder="Ваш Email*" pattern="[A-Za-z]@[A-Za-z].ru" required>
+                    <img class="svg text__icon text__icon--mail" src="img/icon-mail.svg" width="32px" height="32px" alt="Почта">
                     <label class="text__label visually-hidden" for="e-mail">E-mail</label>
                   </div>
                 </div>
@@ -175,7 +182,7 @@
         <div class="container">
           <fieldset class="form-order__fieldset fieldset fieldset--textarea">
             <div class="form-order__wrapper">
-              <h2 class="fieldset__title">Доп</h2>
+              <h2 class="fieldset__title fieldset__title--textarea">Доп</h2>
               <div class="fieldset__wrapper">
                 <div class="fieldset__item textarea">
                   <textarea class="textarea__control" id="more" placeholder="Опишите все ваши пожелания к заказу" rows="7"></textarea>
@@ -184,7 +191,7 @@
               </div>
             </div>
           </fieldset>
-          <div class="form-order__wrapper form-order__wrapper--desktop">
+          <div class="form-order__wrapper form-order__wrapper--tablet form-order__wrapper--desktop">
             <p class="form-order__obligatory">*Поля обязательны для заполнения</p>
             <button class="button form-order__button" type="submit">Отправить заказ</button>
           </div>
@@ -193,18 +200,26 @@
     </main>
 
     <footer class="page-footer">
-        <div class="page-footer__wrapper container">
-          <a class="page-footer__logo logo">
-              <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+        <div class="page-footer__wrapper  container">
+          <a class="page-footer__logo icon">
+            <img class="svg icon__item icon__item--logo-mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
           </a>
           <div class="page-footer__social social">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
-            <a class="social__link social__link--facebook" href="#">Мы в Фэйсбук</a>
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            <a class="social__link social__link--instagram icon" href="#">
+              <img class="svg icon__item icon__item--insta" src="img/icon-insta.svg" width="22" height="21" alt="Instagram">
+            Мы в Инстаграм</a>
+            <a class="social__link social__link--facebook icon" href="#">
+              <img class="svg icon__item icon__item--fb" src="img/icon-fb.svg" width="15" height="28" alt="Facebook">
+            Мы в Фэйсбук</a>
+            <a class="social__link social__link--twitter icon" href="#">
+              <img class="svg icon__item icon__item--twitter" src="img/icon-twitter.svg" width="23" height="20" alt="Twitter">
+            Мы в Твиттере</a>
           </div>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <b class="copyright__text copyright__text--form">Разработано</b>
+            <a class="copyright__link copyright__link--form icon" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="svg icon__item icon__item--htmlacademy" src="img/htmlacademy.svg" width="27" height="34" alt="Twitter">
+            HTML Academy</a>
           </div>
         </div>
       </footer>

@@ -4,19 +4,58 @@
   padding: 0;
 }
 
+.user-list__icon--search,
+.user-list__icon--cart {
+  color: $secondary-color;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    color: $aqua-icons;
+  }
+
+  &:active {
+    color: $aqua-icons;
+    opacity: 0.3;
+  }
+}
+
+.user-list__icon--search {
+  position: absolute;
+  top: 30px;
+  left: 1px;
+}
+
+.user-list__icon--header {
+  position: absolute;
+  top: 29px;
+  left: 0;
+}
+
 .user-list__item {
   min-height: 79px;
   box-sizing: border-box;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
   padding-right: 15px;
   border-top: 1px solid $gray-light;
+  position: relative;
+
+  &.user-list__item:last-of-type {
+    padding-left: 0;
+  }
 }
 
 .user-list__link {
-  padding-left: 45px;
+  padding-left: 20px;
   color: $secondary-color;
+  letter-spacing: 0.85px;
+
+  &.user-list__link--cart {
+    padding-left: 47px;
+    letter-spacing: 1px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -25,28 +64,70 @@
 
     &:hover,
     &:focus {
-      color: $secondary-color-60;
+      color: $secondary-color-30;
     }
 
     &:active {
-      color: $secondary-color-30;
+      color: $secondary-color-60;
     }
+  }
+
+  .user-list__icon--search {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    top: 6px;
+    left: 14px;
+  }
+
+  .user-list__icon--header {
+    top: 33px;
+    left: 31px;
   }
 
   .user-list__link--search {
     font-size: 0;
-    padding: 34px;
-    content: url("../img/icon-search.svg");
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .user-list__link--cart {
     display: block;
-    padding-left: 35px;
-    padding-top: 34px;
+    padding-left: 82px;
+    padding-right: 0;
+    padding-top: 30px;
+    letter-spacing: 1.1px;
     max-width: 300px;
   }
 
   .user-list__item {
     padding: 0;
+    padding-left: 31px;
+    padding-bottom: 36px;
+    border-left: 1px solid $gray-light;
+
+    &.user-list__item:last-of-type {
+      padding-left: 35px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link--search {
+    padding-right: 29px;
+  }
+
+  .user-list__item {
+    padding-left: 22px;
+  }
+
+  .user-list__link--cart {
+    padding-left: 57px;
+  }
+
+  .user-list__icon--search {
+    top: 5px;
+    left: 12px;
   }
 }

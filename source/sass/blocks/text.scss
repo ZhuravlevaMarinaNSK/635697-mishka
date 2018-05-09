@@ -1,29 +1,47 @@
 .text {
   display: flex;
   flex-direction: column-reverse;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
+  position: relative;
 }
 
 .text__control {
   font-weight: 400;
   flex-grow: 1;
+  width: 99%;
 
   @include font(17px,18px);
+  letter-spacing: 0.5px;
   color: $gray-dark;
-  height: 38px;
+  height: 37px;
   border: none;
   border-bottom: 2px solid $secondary-color;
   padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 0;
+  padding-bottom: 6px;
+
+  &.text__control--phone {
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 7px;
+  }
+
+  &.text__control--email {
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
 
   &:hover,
   &:focus {
     border-bottom: 2px solid $aqua-form;
+    outline: none;
   }
 
   &:active {
     border-bottom: 2px solid $aqua-form;
     color: $secondary-color;
+    outline: none;
   }
 }
 
@@ -31,18 +49,50 @@
   font-weight: 700;
 
   @include font(17px,18px);
+  letter-spacing: 1.2px;
   padding-top: 8px;
   padding-left: 1px;
   padding-bottom: 7px;
   padding-right: 20px;
 }
 
+.text__icon--phone {
+  color: $secondary-color;
+  opacity: 0.2;
+  position: absolute;
+  right: 7px;
+  top: -3px;
+
+  &:hover,
+  &:focus {
+    color: $aqua-icons;
+  }
+
+  &:active {
+    color: $aqua-icons;
+    opacity: 0.3;
+  }
+}
+
+.text__icon--mail {
+  position: absolute;
+  right: 3px;
+  top: -1px;
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
   .text {
     width: 100%;
     flex-direction: row-reverse;
+    padding-top: 12px;
+    padding-bottom: 18px;
 
     @include font(19px,19px);
+
+    &.text--email {
+      padding-top: 9px;
+    }
   }
 
   .text__control[type="email"] {
@@ -51,5 +101,101 @@
 
   .text__control[type="tel"] {
     background-color: $gray;
+  }
+
+  .text__control {
+    @include font(19px,19px);
+    margin-left: 12px;
+    padding-left: 16px;
+
+    &.text__control--name {
+      margin-left: 7px;
+    }
+
+    &.text__control--phone {
+      padding-top: 2px;
+      padding-bottom: 10px;
+      margin-left: 20px;
+      letter-spacing: 0.1px;
+    }
+
+    &.text__control--email {
+      padding-bottom: 8px;
+      margin-left: 20px;
+    }
+  }
+
+  .text__icon--phone {
+    right: 25px;
+    top: 15px;
+  }
+
+  .text__icon--mail {
+    right: 20px;
+    top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text__control {
+    @include font(19px,18px);
+    padding-bottom: 7px;
+    margin-left: 3px;
+    padding-right: 70px;
+    padding-left: 18px;
+    margin-right: 3px;
+
+    &.text__control--name {
+      margin-left: 0;
+      padding-left: 10px;
+    }
+
+    &.text__control--phone {
+      padding-bottom: 13px;
+      padding-left: 19px;
+      padding-top: 5px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    &.text__control--email {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 17px;
+      padding-bottom: 9px;
+      width: 100%;
+    }
+  }
+
+  .text__label {
+    @include font(19px,18px);
+    padding-top: 11px;
+    padding-right: 23px;
+
+    &.text__label--name {
+      padding-right: 29px;
+    }
+  }
+
+  .text {
+    &.text--email {
+      width: 98%;
+      padding-top: 8px;
+    }
+
+    &.text--phone {
+      width: 98%;
+      padding-bottom: 16px;
+    }
+  }
+
+  .text__icon--phone {
+    right: 8px;
+    top: 20px;
+  }
+
+  .text__icon--mail {
+    right: 8px;
   }
 }

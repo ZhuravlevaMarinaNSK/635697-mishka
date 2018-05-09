@@ -1,5 +1,7 @@
 .checkbox {
-  padding-bottom: 18px;
+  padding-bottom: 16px;
+  padding-left: 3px;
+  padding-top: 5px;
 }
 
 .checkbox__control {
@@ -11,8 +13,8 @@
 
   @include font(17px,18px);
   color: $secondary-color;
-  padding-top: 15px;
-  padding-left: 18px;
+  padding-top: 11px;
+  padding-left: 22px;
   padding-right: 10px;
   padding-bottom: 3px;
   word-break: break-all;
@@ -24,8 +26,8 @@
 .checkbox__icon {
   position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border: 2px solid $gray-dark;
   flex-shrink: 0;
 
@@ -41,18 +43,56 @@
   &.checkbox__icon::after {
     content: url("../img/icon-tick.svg");
     position: absolute;
-    left: 6px;
-    bottom: 6px;
+    left: 0;
+    bottom: 1px;
     opacity: 0;
   }
 }
 
 .checkbox__control:checked ~ .checkbox__icon::after {
   opacity: 1;
+  transform: scale(0.7);
 }
 
 @media (min-width: $tablet-width) {
   .checkbox__label {
     @include font(19px,19px);
+    padding-top: 13px;
+    padding-left: 25px;
+    padding-bottom: 19px;
+  }
+
+  .checkbox {
+    padding-bottom: 19px;
+    padding-left: 0;
+    width: 239px;
+  }
+
+  .checkbox__icon {
+    width: 49px;
+    height: 49px;
+
+    &.checkbox__icon::after {
+      left: 8px;
+      bottom: 7px;
+    }
+  }
+
+  .checkbox__control:checked ~ .checkbox__icon::after {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    padding-bottom: 17px;
+    padding-top: 7px;
+    padding-right: 18px;
+  }
+
+  .checkbox__label {
+    @include font(19px,18px);
+    padding-top: 16px;
+    padding-left: 30px;
   }
 }

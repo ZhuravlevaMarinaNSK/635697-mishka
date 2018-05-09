@@ -24,10 +24,18 @@
   }
 
   .page-header {
-    background: linear-gradient($primary-color 50%, $gray 50%);
+    background: linear-gradient($primary-color 52%, #f1f1f1 52%);
+    width: 100vw;
+  }
 
-    &--main {
-      background: linear-gradient($primary-color 50%, #f9f9f9 50%);
-    }
+  .page-header-main {
+    background: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background: linear-gradient($primary-color 67%, $gray 67%);
+    width: 100vw;
   }
 }
