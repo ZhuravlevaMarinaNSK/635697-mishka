@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .site-list__item {
     box-sizing: border-box;
-    max-width: 175px;
+    max-width: 180px;
     padding-top: 15px;
     padding-bottom: 30px;
     padding-left: 0;
@@ -49,13 +49,18 @@
 
   .site-list__link {
     padding-left: 0;
+    letter-spacing: 0.7px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__link {
+    letter-spacing: 0.7px;
+  }
+
   .site-list__item {
     @include font(17px,24px);
-    max-width: 190px;
+    max-width: 192px;
     padding-right: 10px;
     padding-top: 25px;
     padding-left: 2px;

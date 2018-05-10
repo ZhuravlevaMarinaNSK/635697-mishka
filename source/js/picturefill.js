@@ -9,7 +9,6 @@
  */
 (function(window) {
   /*jshint eqnull:true */
-  /*stylelint-disable*/
 	var ua = navigator.userAgent;
 
 	if ( window.HTMLPictureElement && ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 < 45) ) {

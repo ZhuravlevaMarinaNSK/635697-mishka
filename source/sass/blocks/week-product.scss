@@ -141,10 +141,9 @@
     margin-top: 60px;
 
     @include font(17px,17px);
-    flex-basis: 16.5%;
+    width: 100px;
     order: 1;
-    padding-left: 31px;
-    padding-right: 33px;
+    margin-left: 37px;
     box-sizing: border-box;
   }
 
@@ -153,8 +152,9 @@
     letter-spacing: 2.6px;
     margin-right: auto;
     margin-top: 20px;
+    margin-left: 34px;
     padding-top: 25px;
-    flex-basis: 530px;
+    flex-basis: 800px;
     z-index: 3;
     order: 2;
   }
