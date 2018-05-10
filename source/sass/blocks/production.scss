@@ -109,13 +109,12 @@
 @media (min-width: $tablet-width) {
   .production {
     padding-bottom: 34px;
-    margin-top: -4px;
+    padding-top: 1px;
   }
 
   .production__card {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 44px;
+    display: block;
+    padding-bottom: 13px;
   }
 
   .production__video {
@@ -124,6 +123,7 @@
     margin-right: auto;
     height: 455px;
     width: 100%;
+    overflow: hidden;
 
     &::after {
       top: 189px;
@@ -155,18 +155,19 @@
 
   .production__button {
     width: 87.5%;
-    margin: auto;
+    margin-left: 44px;
     min-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
-    padding-bottom: 71px;
-    margin-top: 2px;
+    padding-bottom: 73px;
+    margin-top: 5px;
   }
 
   .production__card {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 0;

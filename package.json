@@ -13,7 +13,8 @@
     "gulp-sass": "4.0.x",
     "picturefill": "^3.0.2",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svg4everybody": "^2.1.9"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
