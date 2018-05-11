@@ -121,7 +121,7 @@
 
   .week-product__price {
     @include font(20px,24px);
-    width: 51%;
+    width: 210px;
     display: block;
     padding-top: 46px;
     padding-left: 74px;
@@ -134,7 +134,7 @@
   }
 
   .week-product__button {
-    width: 100%;
+    width: 290px;
     min-height: 52px;
   }
 }
@@ -187,7 +187,7 @@
   }
 
   .week-product__image {
-    top: 188px;
+    top: 57px;
     width: 525px;
     height: 636px;
   }
@@ -196,10 +196,11 @@
     padding-top: 53px;
     padding-left: 75px;
     padding-bottom: 34px;
+    width: 210px;
   }
 
   .week-product__button {
-    width: 100%;
+    width: 290px;
     margin-left: 3px;
   }
 }

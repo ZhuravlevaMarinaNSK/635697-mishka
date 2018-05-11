@@ -12,17 +12,6 @@
   }
 }
 
-.icon__item--insta {
-  padding-top: 6px;
-}
-
-.icon__item--fb {
-  padding-top: 6px;
-}
-
-.icon__item--twitter {
-  padding-top: 6px;
-}
 
 .icon__item--logo-mobile {
   padding-left: 10px;
@@ -35,10 +24,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.social__link--twitter img {
-  max-width: initial;
 }
 
 @media (min-width: $tablet-width) {
