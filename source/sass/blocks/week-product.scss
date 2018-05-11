@@ -129,7 +129,7 @@
   }
 
   .week-product__wrapper {
-    height: 476px;
+    min-height: 476px;
     padding-right: 380px;
   }
 
@@ -181,7 +181,7 @@
   }
 
   .week-product__wrapper {
-    height: 545px;
+    min-height: 545px;
     margin-left: 175px;
     order: 3;
   }

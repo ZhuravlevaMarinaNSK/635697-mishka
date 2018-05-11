@@ -88,9 +88,12 @@
   }
 }
 
+.production__wrapper {
+  order: 3;
+}
+
 .production__description {
   font-weight: 400;
-  order: 3;
 
   @include font(13px,24px);
   padding-top: 8px;
@@ -100,7 +103,6 @@
 }
 
 .production__button {
-  order: 4;
   margin-bottom: 30px;
   width: 194px;
   margin-left: 13%;
@@ -168,20 +170,25 @@
 
   .production__card {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-end;
     padding-bottom: 0;
-    height: 455px;
+    min-height: 455px;
   }
 
   .production__wrapper {
-    width: 365px;
+    display: flex;
+    flex-direction: column;
+    width: 366px;
   }
 
   .production__title {
     padding-top: 96px;
     padding-left: 60px;
-    width: 21%;
+    width: 242px;
+    margin-bottom: -164px;
+    position: absolute;
+    right: 76px;
 
     &::before {
       top: 42px;
@@ -194,6 +201,7 @@
     margin-right: 0;
     height: 455px;
     width: 65%;
+    order: -1;
 
     &::after {
       top: 190px;
@@ -202,14 +210,16 @@
   }
 
   .production__button {
-    width: 22%;
+    width: 64%;
     margin: auto;
     margin-top: 10px;
     margin-right: 55px;
+    margin-bottom: 5px;
   }
 
   .production__description {
-    padding-left: 60px;
-    width: 22%;
+    padding-left: 77px;
+    width: 61%;
+    padding-top: 160px;
   }
 }

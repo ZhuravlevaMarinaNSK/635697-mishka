@@ -27,6 +27,8 @@
     @include font(17px,24px);
     color: $secondary-color;
     font-weight: 700;
+    word-wrap: break-word;
+    word-break: keep-all;
 
     &:hover,
     &:focus {
