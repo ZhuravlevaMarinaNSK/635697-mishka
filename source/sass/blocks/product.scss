@@ -189,7 +189,8 @@
 
   .product__price {
     margin-top: 0;
-    padding-left: 0;
+    padding-left: 3px;
+    padding-bottom: 25px;
   }
 
   .product {
@@ -203,7 +204,9 @@
     width: 100%;
     flex-grow: 1;
     margin-bottom: 0;
+    margin-top: auto;
     border: 1px solid transparent;
+    min-height: 193px;
 
     &:hover,
     &:focus {
@@ -221,8 +224,8 @@
 
   .product__name {
     @include font(20px,24px);
-    margin-top: 24px;
     padding-left: 26px;
+    margin-top: 22px;
   }
 
   .product__description {
@@ -234,12 +237,16 @@
 
   .product__buy {
     @include font(17px,24px);
-    padding-top: 21px;
     padding-bottom: 0;
     margin-top: auto;
+    padding-top: 21px;
 
     &.product__buy--big {
-      margin-top: 0;
+      margin-top: auto;
     }
+  }
+
+  .product__item {
+    min-height: 118px;
   }
 }
