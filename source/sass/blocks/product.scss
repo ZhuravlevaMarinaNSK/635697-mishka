@@ -158,7 +158,8 @@
 
 @media (min-width: $desktop-width) {
   .product__card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 314px;
     margin-bottom: 48px;
 
@@ -207,11 +208,13 @@
     &:hover,
     &:focus {
       border: 1px solid $gray-light;
+      border-top: 1px solid transparent;
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
 
     &:active {
       border: 1px solid $gray-light;
+      border-top: 1px solid transparent;
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     }
   }
@@ -233,7 +236,7 @@
     @include font(17px,24px);
     padding-top: 21px;
     padding-bottom: 0;
-    margin-top: 25px;
+    margin-top: auto;
 
     &.product__buy--big {
       margin-top: 0;
