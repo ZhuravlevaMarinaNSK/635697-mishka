@@ -42,6 +42,26 @@
 
   &.fieldset__title:not(.fieldset__title--email)::after {
     content: "";
+    width: 100%;
+    background-color: $aqua-light;
+    height: 2px;
+    position: absolute;
+    bottom: 27px;
+    margin-left: 26px;
+  }
+
+  &.fieldset__title--email::after {
+    content: "";
+    width: 69%;
+    background-color: $aqua-light;
+    height: 2px;
+    position: absolute;
+    bottom: 25px;
+    display: block;
+    right: 2px;
+  }
+  /*&.fieldset__title:not(.fieldset__title--email)::after {
+    content: "";
     width: 196px;
     background-color: $aqua-light;
     height: 2px;
@@ -60,7 +80,7 @@
     bottom: 25px;
     display: block;
     right: 2px;
-  }
+  }*/
 }
 
 .fieldset__item {

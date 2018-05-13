@@ -73,11 +73,11 @@
 
   &:hover,
   &:focus {
-    color: $aqua-icons;
+    color: $aqua-small-icons;
   }
 
   &:active {
-    color: $aqua-icons;
+    color: $aqua-small-icons;
     opacity: 0.3;
   }
 }
@@ -161,7 +161,7 @@
     display: flex;
     flex-direction: column;
     width: 314px;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
 
     &:hover,
     &:focus {
@@ -201,12 +201,14 @@
   }
 
   .product__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
     width: 100%;
     flex-grow: 1;
     margin-bottom: 0;
     margin-top: auto;
     border: 1px solid transparent;
-    min-height: 193px;
 
     &:hover,
     &:focus {
@@ -239,7 +241,7 @@
     @include font(17px,24px);
     padding-bottom: 0;
     margin-top: auto;
-    padding-top: 21px;
+    padding-top: 24px;
 
     &.product__buy--big {
       margin-top: auto;
