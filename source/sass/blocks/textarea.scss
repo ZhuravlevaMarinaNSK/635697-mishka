@@ -1,6 +1,7 @@
 .textarea__control {
   font-weight: 400;
   margin-left: 3px;
+  resize: none;
 
   @include font(17px,18px);
   color: $gray-dark;
