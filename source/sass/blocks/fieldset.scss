@@ -42,7 +42,7 @@
 
   &.fieldset__title:not(.fieldset__title--email)::after {
     content: "";
-    width: 100%;
+    width: 91vw;
     background-color: $aqua-light;
     height: 2px;
     position: absolute;
@@ -52,12 +52,11 @@
 
   &.fieldset__title--email::after {
     content: "";
-    width: 69%;
+    width: 83vw;
     background-color: $aqua-light;
     height: 2px;
     position: absolute;
     bottom: 25px;
-    display: block;
     right: 2px;
   }
   /*&.fieldset__title:not(.fieldset__title--email)::after {

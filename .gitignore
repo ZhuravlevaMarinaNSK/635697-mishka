@@ -1,12 +1,12 @@
 .DS_Store
 .idea
-.build
 *.ai
 *.log
 *.pdf
 *.psd
 *.sublime*
 node_modules/
+build/
 npm-debug.*
 source/css/*.css
 Thumbs.db
