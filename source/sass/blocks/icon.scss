@@ -1,48 +1,41 @@
 .icon__item--htmlacademy {
-  color: #63d1bb;
+  transform: scale(0.7);
+  fill: #63d1bb;
 
   &:hover,
   &:focus {
-    color: #46c1ae;
+    fill: #46c1ae;
   }
 
   &:active {
-    color: #46c1ae;
+    fill: #46c1ae;
     opacity: 0.3;
   }
 }
 
-.icon__item--insta {
-  padding-top: 6px;
-}
-
-.icon__item--fb {
-  padding-top: 6px;
-}
-
-.icon__item--twitter {
-  padding-top: 6px;
-}
-
-.icon__item--logo-mobile {
-  padding-left: 10px;
-
+.icon__item--logo-mobile,
+.icon__item {
   &:hover,
-  &:active {
-    opacity: 0.6;
+  &:focus {
+    fill: #46c1ae;
   }
 
   &:active {
+    fill: #46c1ae;
     opacity: 0.3;
   }
-}
-
-.social__link--twitter img {
-  max-width: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .icon__item--logo-mobile {
     padding-top: 10px;
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .icon__item--logo-mobile {
+    padding-left: 10px;
+    padding-top: 6px;
   }
 }

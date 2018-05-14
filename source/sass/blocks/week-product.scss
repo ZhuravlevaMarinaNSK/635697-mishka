@@ -49,7 +49,7 @@
 .week-product__image {
   order: 3;
   margin-top: 19px;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
   margin-left: 0;
 }
 
@@ -83,7 +83,7 @@
     align-items: flex-end;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 31px;
+    padding-top: 23px;
   }
 
   .week-product__title {
@@ -105,19 +105,23 @@
     padding-top: 27px;
     padding-right: 3px;
     padding-bottom: 20px;
-    width: 45%;
+    width: 288px;
 
     @include font(17px,30px);
     letter-spacing: 0.2px;
   }
 
   .week-product__image {
-    order: 6;
+    position: absolute;
+    right: 0;
+    top: 136px;
+    width: 333px;
+    height: 404px;
   }
 
   .week-product__price {
     @include font(20px,24px);
-    width: 30%;
+    width: 210px;
     display: block;
     padding-top: 46px;
     padding-left: 74px;
@@ -125,11 +129,12 @@
   }
 
   .week-product__wrapper {
-    max-height: 500px;
+    min-height: 476px;
+    padding-right: 380px;
   }
 
   .week-product__button {
-    width: 43.7%;
+    width: 290px;
     min-height: 52px;
   }
 }
@@ -139,10 +144,9 @@
     margin-top: 60px;
 
     @include font(17px,17px);
-    flex-basis: 16.5%;
+    width: 100px;
     order: 1;
-    padding-left: 31px;
-    padding-right: 33px;
+    margin-left: 37px;
     box-sizing: border-box;
   }
 
@@ -151,8 +155,9 @@
     letter-spacing: 2.6px;
     margin-right: auto;
     margin-top: 20px;
+    margin-left: 34px;
     padding-top: 25px;
-    flex-basis: 530px;
+    flex-basis: 800px;
     z-index: 3;
     order: 2;
   }
@@ -160,13 +165,13 @@
   .week-product {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 90px;
+    padding-top: 82px;
   }
 
   .week-product__describtion {
     margin-bottom: 20px;
     letter-spacing: 0.2px;
-    width: 37%;
+    width: 288px;
     padding-top: 28px;
     padding-left: 2px;
   }
@@ -176,19 +181,26 @@
   }
 
   .week-product__wrapper {
-    max-height: 700px;
+    min-height: 545px;
     margin-left: 175px;
     order: 3;
+  }
+
+  .week-product__image {
+    top: 57px;
+    width: 525px;
+    height: 636px;
   }
 
   .week-product__price {
     padding-top: 53px;
     padding-left: 75px;
     padding-bottom: 34px;
+    width: 210px;
   }
 
   .week-product__button {
-    width: 37%;
+    width: 290px;
     margin-left: 3px;
   }
 }

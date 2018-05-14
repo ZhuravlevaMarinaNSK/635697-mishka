@@ -88,9 +88,12 @@
   }
 }
 
+.production__wrapper {
+  order: 3;
+}
+
 .production__description {
   font-weight: 400;
-  order: 3;
 
   @include font(13px,24px);
   padding-top: 8px;
@@ -100,7 +103,6 @@
 }
 
 .production__button {
-  order: 4;
   margin-bottom: 30px;
   width: 194px;
   margin-left: 13%;
@@ -108,14 +110,13 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    padding-bottom: 32px;
-    margin-top: -4px;
+    padding-bottom: 34px;
+    padding-top: 1px;
   }
 
   .production__card {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 44px;
+    display: block;
+    padding-bottom: 13px;
   }
 
   .production__video {
@@ -124,6 +125,7 @@
     margin-right: auto;
     height: 455px;
     width: 100%;
+    overflow: hidden;
 
     &::after {
       top: 189px;
@@ -155,32 +157,38 @@
 
   .production__button {
     width: 87.5%;
-    margin: auto;
+    margin-left: 44px;
     min-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
-    padding-bottom: 71px;
-    margin-top: 2px;
+    padding-bottom: 73px;
+    margin-top: 5px;
   }
 
   .production__card {
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     padding-bottom: 0;
-    height: 455px;
+    min-height: 455px;
+    position: relative;
   }
 
   .production__wrapper {
-    width: 365px;
+    display: flex;
+    flex-direction: column;
+    width: 366px;
   }
 
   .production__title {
-    padding-top: 96px;
+    padding-top: 98px;
     padding-left: 60px;
-    width: 21%;
+    width: 242px;
+    position: absolute;
+    right: 25px;
 
     &::before {
       top: 42px;
@@ -193,6 +201,7 @@
     margin-right: 0;
     height: 455px;
     width: 65%;
+    order: -1;
 
     &::after {
       top: 190px;
@@ -201,14 +210,16 @@
   }
 
   .production__button {
-    width: 22%;
+    width: 64%;
     margin: auto;
     margin-top: 10px;
     margin-right: 55px;
+    margin-bottom: 5px;
   }
 
   .production__description {
-    padding-left: 60px;
-    width: 22%;
+    padding-left: 77px;
+    width: 61%;
+    padding-top: 164px;
   }
 }

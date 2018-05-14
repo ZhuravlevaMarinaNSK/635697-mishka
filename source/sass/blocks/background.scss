@@ -1,5 +1,6 @@
 .background {
   background-color: $gray;
+  position: relative;
 }
 
 .background-main {
@@ -22,10 +23,43 @@
 }
 
 @media (min-width: $tablet-width) {
+  .background-main {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 24px;
+      bottom: -15px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position-x: 0;
+      background-size: 100% 25px;
+      background-repeat: repeat-x;
+    }
+  }
+
   .background__text {
     @include font(43px,50px);
     padding-top: 12px;
     letter-spacing: 2px;
+    min-height: 143px;
+  }
+
+  .background::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 24px;
+    bottom: -14px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position-x: 40%;
+    background-size: 768px 25px;
+    background-repeat: repeat-x;
+    z-index: 10;
   }
 
   .background-no-mobile {
@@ -38,6 +72,20 @@
   .background__text {
     @include font(53px,57px);
     padding-top: 50px;
-    min-height: 196px;
+    min-height: 210px;
+  }
+
+  .background::after {
+    background-size: auto 34px;
+    bottom: -8px;
+  }
+
+  .background-main {
+    &::after {
+      height: 30px;
+      bottom: -14px;
+      background-position-x: 611%;
+      background-size: 1250px 41px;
+    }
   }
 }

@@ -62,14 +62,15 @@
   position: absolute;
   right: 7px;
   top: -3px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    color: $aqua-icons;
+    fill: $aqua-form;
   }
 
   &:active {
-    color: $aqua-icons;
+    fill: $aqua-form;
     opacity: 0.3;
   }
 }
@@ -79,6 +80,17 @@
   right: 3px;
   top: -1px;
   opacity: 0.2;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $aqua-form;
+  }
+
+  &:active {
+    fill: $aqua-form;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
