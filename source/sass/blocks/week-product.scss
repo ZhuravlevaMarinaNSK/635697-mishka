@@ -9,7 +9,6 @@
   padding-left: 1px;
   padding-right: 5px;
   padding-bottom: 4px;
-  letter-spacing: 1.3px;
 
   @include font(25px,30px);
 }
@@ -19,7 +18,6 @@
   text-transform: uppercase;
 
   @include font(17px,20px);
-  letter-spacing: 0.4px;
   padding-left: 0;
   padding-bottom: 5px;
   padding-right: 5px;
@@ -28,7 +26,7 @@
 .week-product__describtion {
   display: inline-block;
   margin-bottom: 0;
-  padding-top: 7px;
+  padding-top: 8px;
   padding-right: 3px;
   padding-left: 0;
   color: $gray-dark;
@@ -63,7 +61,6 @@
   color: $gray-dark;
 
   @include font(17px,24px);
-  letter-spacing: 0.5px;
 }
 
 .week-product__wrapper {
@@ -89,7 +86,6 @@
   .week-product__title {
     @include font(43px,50px);
     flex-basis: 440px;
-    letter-spacing: 2px;
   }
 
   .week-product__promo {
@@ -108,7 +104,6 @@
     width: 288px;
 
     @include font(17px,30px);
-    letter-spacing: 0.2px;
   }
 
   .week-product__image {
@@ -152,7 +147,6 @@
 
   .week-product__title {
     @include font(53px,57px);
-    letter-spacing: 2.6px;
     margin-right: auto;
     margin-top: 20px;
     margin-left: 34px;
@@ -170,7 +164,6 @@
 
   .week-product__describtion {
     margin-bottom: 20px;
-    letter-spacing: 0.2px;
     width: 288px;
     padding-top: 28px;
     padding-left: 2px;

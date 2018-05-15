@@ -117,15 +117,15 @@
 
   .text__control {
     @include font(19px,19px);
-    margin-left: 12px;
+    margin-left: 4px;
     padding-left: 16px;
 
     &.text__control--name {
-      margin-left: 7px;
+      margin-left: 3px;
     }
 
     &.text__control--phone {
-      padding-top: 2px;
+      padding-top: 3px;
       padding-bottom: 10px;
       margin-left: 20px;
       letter-spacing: 0.1px;
@@ -155,11 +155,11 @@
     margin-left: 3px;
     padding-right: 70px;
     padding-left: 18px;
-    margin-right: 3px;
+    margin-right: 19px;
 
     &.text__control--name {
       margin-left: 0;
-      padding-left: 10px;
+      padding-left: 14px;
     }
 
     &.text__control--phone {
@@ -183,10 +183,10 @@
   .text__label {
     @include font(19px,18px);
     padding-top: 11px;
-    padding-right: 23px;
+    padding-right: 13px;
 
     &.text__label--name {
-      padding-right: 29px;
+      padding-right: 22px;
     }
   }
 

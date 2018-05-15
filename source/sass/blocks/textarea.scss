@@ -8,6 +8,7 @@
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 38px;
+  padding-bottom: 16px;
   border: 2px solid $secondary-color;
   margin-top: 6px;
   width: 100%;
@@ -34,6 +35,7 @@
     @include font(19px,18px);
     width: 100%;
     padding-top: 12px;
+    padding-bottom: 16px;
     margin-left: 0;
   }
 }
@@ -41,7 +43,7 @@
 @media (min-width: $desktop-width) {
   .textarea__control {
     width: 97%;
-    padding-bottom: 0;
+    padding-bottom: 17px;
     margin-left: 2px;
     margin-top: 8px;
   }

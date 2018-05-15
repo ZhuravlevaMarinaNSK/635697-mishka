@@ -14,9 +14,8 @@
   vertical-align: middle;
   padding-top: 70px;
   padding-bottom: 5px;
-  padding-left: 10px;
+  padding-left: 0;
   box-sizing: border-box;
-  letter-spacing: 1.4px;
 
   @include font(27px,30px);
   font-weight: 700;
@@ -36,7 +35,7 @@
       left: 0;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-position-x: 0;
-      background-size: 100% 25px;
+      background-size: 768px 25px;
       background-repeat: repeat-x;
     }
   }
@@ -44,7 +43,6 @@
   .background__text {
     @include font(43px,50px);
     padding-top: 12px;
-    letter-spacing: 2px;
     min-height: 143px;
   }
 
