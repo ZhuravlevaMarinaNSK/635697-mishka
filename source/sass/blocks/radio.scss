@@ -1,5 +1,7 @@
 .radio {
   padding-top: 6px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .radio__control {
@@ -7,55 +9,61 @@
 }
 
 .radio__label {
-  display: inline-block;
+  display: block;
+  position: relative;
+  cursor: pointer;
 
   @include font(17px,18px);
-  letter-spacing: 0.2px;
   color: $secondary-color;
   padding-top: 9px;
-  padding-left: 26px;
-  padding-right: 30px;
+  padding-left: 65px;
+  padding-right: 4px;
   padding-bottom: 8px;
   word-break: keep-all;
   word-wrap: break-word;
-  width: 200px;
+  width: 225px;
   box-sizing: border-box;
-}
 
-.radio__icon {
-  position: relative;
-  margin-left: 5px;
-  display: block;
-  width: 35px;
-  height: 35px;
-  border: 2px solid $gray-dark;
-  border-radius: 50%;
-  flex-shrink: 0;
 
-  &:hover,
-  &:focus {
+  &.radio__label::before {
+    content: "";
+    margin-left: 5px;
+    display: block;
+    position: absolute;
+    left: -4px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $gray-dark;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &.radio__label::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    bottom: 27px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    background-color: $aqua-form;
+    border-radius: 50%;
+  }
+
+
+  &:hover::before,
+  &:focus::before {
     border: 2px solid $aqua-form;
   }
 
-  &:active {
+  &:active::before {
     border: 2px solid $gray-30;
   }
 }
 
-.radio__icon::after {
-  content: "";
-  position: absolute;
-  left: 8px;
-  bottom: 10px;
-  display: block;
-  width: 16px;
-  height: 16px;
-  opacity: 0;
-  background-color: $aqua-form;
-  border-radius: 50%;
-}
-
-.radio__control:checked ~ .radio__icon::after {
+.radio__control:checked ~ .radio__label::after {
   opacity: 1;
 }
 
@@ -66,24 +74,25 @@
 
   .radio__label {
     width: 100%;
-    letter-spacing: 2px;
     padding-top: 15px;
-    padding-left: 30px;
+    padding-left: 80px;
     padding-right: 30px;
-    padding-bottom: 40px;
-  }
+    padding-bottom: 45px;
 
-  .radio__icon {
-    width: 47px;
-    height: 47px;
-    margin-left: 0;
-  }
+    &.radio__label::before {
+      margin-left: 0;
+      left: -2px;
+      top: 0;
+      width: 47px;
+      height: 47px;
+    }
 
-  .radio__icon::after {
-    left: 13px;
-    bottom: 14px;
-    width: 20px;
-    height: 20px;
+    &.radio__label::after {
+      left: 16px;
+      bottom: 40px;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 

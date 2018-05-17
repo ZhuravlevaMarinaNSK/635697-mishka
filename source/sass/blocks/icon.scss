@@ -28,7 +28,8 @@
 
 @media (min-width: $tablet-width) {
   .icon__item--logo-mobile {
-    padding-top: 10px;
+    padding-top: 0;
+    padding-left: 10px;
     transform: scale(1.2);
   }
 }

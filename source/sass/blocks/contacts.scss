@@ -13,7 +13,6 @@
 
   @include font(18px,30px);
   font-weight: 700;
-  letter-spacing: 0.95px;
 }
 
 .contacts__table {
@@ -91,7 +90,6 @@
     padding-right: 80px;
     padding-top: 80px;
     padding-bottom: 27px;
-    letter-spacing: 2px;
   }
 
   .contacts__table {
@@ -117,7 +115,6 @@
 
     &.contacts__value--email {
       padding-left: 15px;
-      letter-spacing: 1px;
 
       &::after {
         width: 82%;
@@ -186,7 +183,6 @@
 
   .contacts__title {
     @include font(53px,57px);
-    letter-spacing: 2.8px;
     padding-top: 110px;
     padding-right: 60px;
     order: 1;
@@ -199,12 +195,12 @@
 
   .contacts__value {
     padding-left: 4px;
-    letter-spacing: 0.1px;
 
 
     &.contacts__value--email {
       padding-left: 2px;
-      letter-spacing: 1px;
+
+      @include font(17px,30px);
 
       &::after {
         width: 86%;

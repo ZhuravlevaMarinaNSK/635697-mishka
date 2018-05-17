@@ -1,16 +1,16 @@
 .fieldset {
-  padding-bottom: 23px;
+  padding-bottom: 28px;
 
   &.fieldset--checkbox {
-    padding-bottom: 6px;
-  }
-
-  &.fieldset--text {
     padding-bottom: 9px;
   }
 
+  &.fieldset--text {
+    padding-bottom: 11px;
+  }
+
   &.fieldset--phone {
-    padding-bottom: 10px;
+    padding-bottom: 11px;
   }
 
   &.fieldset--email {
@@ -18,7 +18,7 @@
   }
 
   &.fieldset--textarea {
-    padding-bottom: 11px;
+    padding-bottom: 17px;
   }
 }
 
@@ -37,27 +37,27 @@
   color: $aqua-light;
 
   &.fieldset__title--phone {
-    padding-bottom: 19px;
+    padding-bottom: 17px;
   }
 
   &.fieldset__title:not(.fieldset__title--email)::after {
     content: "";
-    width: 91vw;
+    width: 77vw;
     background-color: $aqua-light;
     height: 2px;
     position: absolute;
     bottom: 27px;
-    margin-left: 26px;
+    margin-left: 20px;
   }
 
   &.fieldset__title--email::after {
     content: "";
-    width: 83vw;
+    width: 56vw;
     background-color: $aqua-light;
     height: 2px;
     position: absolute;
     bottom: 25px;
-    right: 2px;
+    left: 80px;
   }
   /*&.fieldset__title:not(.fieldset__title--email)::after {
     content: "";
@@ -93,15 +93,15 @@
     padding-top: 15px;
 
     &.fieldset__title--color {
-      padding-top: 21px;
+      padding-top: 24px;
     }
 
     &.fieldset__title--name {
-      padding-top: 20px;
+      padding-top: 22px;
     }
 
     &.fieldset__title--phone {
-      padding-top: 20px;
+      padding-top: 24px;
       padding-right: 0;
     }
 
@@ -118,7 +118,7 @@
     }
 
     &.fieldset__title--textarea {
-      padding-top: 22px;
+      padding-top: 24px;
     }
   }
 
@@ -134,10 +134,10 @@
   }
 
   .fieldset {
-    padding-bottom: 30px;
+    padding-bottom: 21px;
 
     &.fieldset--checkbox {
-      padding-bottom: 28px;
+      padding-bottom: 34px;
     }
 
     &.fieldset--text {
@@ -149,11 +149,11 @@
     }
 
     &.fieldset--email {
-      padding-bottom: 32px;
+      padding-bottom: 34px;
     }
 
     &.fieldset--textarea {
-      padding-bottom: 14px;
+      padding-bottom: 20px;
     }
   }
 }
@@ -216,10 +216,10 @@
   }
 
   .fieldset {
-    padding-bottom: 26px;
+    padding-bottom: 24px;
 
     &.fieldset--checkbox {
-      padding-bottom: 32px;
+      padding-bottom: 35px;
     }
 
     &.fieldset--text {

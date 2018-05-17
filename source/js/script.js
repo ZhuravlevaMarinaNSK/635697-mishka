@@ -39,8 +39,16 @@
     if (evt.keyCode === 27) {
         evt.preventDefault();
       if (popup.classList.contains('modal--show')) {
-    popup.classList.remove('modal--show');
-    mask.classList.remove('modal--show');
+          popup.classList.remove('modal--show');
+          mask.classList.remove('modal--show');
       }
+    }
+  });
+
+  mask.addEventListener('click', function (evt) {
+      evt.preventDefault();
+    if (popup.classList.contains('modal--show')) {
+        popup.classList.remove('modal--show');
+        mask.classList.remove('modal--show');
     }
   });

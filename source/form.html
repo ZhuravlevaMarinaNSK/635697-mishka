@@ -11,65 +11,65 @@
     <script src="js/svg4everybody.min.js"></script>
   </head>
   <body>
-      <div class="visually-hidden">
-        <include src="build/img/sprite.svg"></include>
-      </div>
-      <header>
-          <div class="page-header">
-            <div class="container">
-              <nav class="main-nav main-nav--closed main-nav--nojs">
-                <div class="main-nav__wrapper">
-                  <a class="main-nav__logo logo" href="index.html">
-                    <picture class="logo__img">
-                      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                      <source media="(min-width: 668px)" srcset="img/logo-tablet.svg">
-                      <img src="img/logo-mobile.svg" alt="Логотип Mishka">
-                    </picture>
-                  </a>
-                  <ul class="main-nav__list main-nav__list--main site-list">
-                    <li class="site-list__item site-list__item--menu-catalog">
-                      <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-                    </li>
-                    <li class="site-list__item">
-                      <a class="site-list__link" href="#">Вязание на заказ</a>
-                    </li>
-                  </ul>
-                  <ul class="main-nav__list main-nav__list--user user-list">
-                    <li class="user-list__item">
-                      <a class="user-list__link user-list__link--search" href="#">
-                        <svg class="user-list__icon user-list__icon--search" width="18" height="18">
-                          <use xlink:href="#icon-search"></use>
-                        </svg>
-                      Поиск по сайту</a>
-                    </li>
-                    <li class="user-list__item">
-                      <a class="user-list__link user-list__link--cart" href="#">
-                        <svg class="user-list__icon user-list__icon--cart user-list__icon--header" width="20" height="19">
-                          <use xlink:href="#icon-cart"></use>
-                        </svg>
-                      Корзина:пока пуста</a>
-                    </li>
-                  </ul>
-                  <ul class="main-nav__list main-nav__list--expanded expanded-list">
-                    <li class="expanded-list__item">
-                      <a href="#">Новые поступления</a>
-                    </li>
-                    <li class="expanded-list__item">
-                      <a href="#">Распродажа</a>
-                    </li>
-                  </ul>
-                  <ul class="main-nav__list main-nav__list--promo promo-list">
-                    <li class="promo-list__item">Бесплатная доставка по России</li>
-                  </ul>
+    <div class="visually-hidden">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header>
+      <div class="page-header">
+        <div class="container">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="main-nav__wrapper">
+              <a class="main-nav__logo logo" href="index.html">
+                <picture class="logo__img">
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 668px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" alt="Логотип Mishka">
+                </picture>
+              </a>
+              <ul class="main-nav__list main-nav__list--main site-list">
+                <li class="site-list__item site-list__item--menu-catalog">
+                  <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Вязание на заказ</a>
+                </li>
+              </ul>
+              <ul class="main-nav__list main-nav__list--user user-list">
+                <li class="user-list__item user-list__item--catalog">
+                  <a class="user-list__link user-list__link--search" href="#">
+                    <svg class="user-list__icon user-list__icon--search" width="18" height="18">
+                      <use xlink:href="#icon-search"></use>
+                    </svg>
+                  Поиск по сайту</a>
+                </li>
+                <li class="user-list__item user-list__item--catalog">
+                  <a class="user-list__link user-list__link--cart" href="#">
+                    <svg class="user-list__icon user-list__icon--form user-list__icon--cart user-list__icon--header" width="20" height="19">
+                      <use xlink:href="#icon-cart"></use>
+                    </svg>
+                  Корзина:пока пуста</a>
+                </li>
+              </ul>
+              <ul class="main-nav__list main-nav__list--expanded expanded-list">
+                <li class="expanded-list__item">
+                  <a href="#">Новые поступления</a>
+                </li>
+                <li class="expanded-list__item">
+                  <a href="#">Распродажа</a>
+                </li>
+              </ul>
+              <ul class="main-nav__list main-nav__list--promo promo-list">
+                <li class="promo-list__item">Бесплатная доставка по России</li>
+              </ul>
 
-                  <button class="main-nav__toggle" type="button">
-                    Открыть меню
-                  </button>
-                </div>
-              </nav>
+              <button class="main-nav__toggle" type="button">
+                Открыть меню
+              </button>
             </div>
-          </div>
-        </header>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main>
       <div class="background">
@@ -204,7 +204,7 @@
               <h2 class="fieldset__title fieldset__title--textarea">Доп</h2>
               <div class="fieldset__wrapper">
                 <div class="fieldset__item textarea">
-                  <textarea class="textarea__control" id="more" placeholder="Опишите все ваши пожелания к заказу" rows="7"></textarea>
+                  <textarea class="textarea__control" id="more" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
                   <label class="textarea__label visually-hidden" for="more">Дополнительно</label>
                 </div>
               </div>
@@ -226,29 +226,29 @@
           </svg>
         </a>
         <div class="page-footer__social social">
-          <a class="social__link social__link--instagram icon" href="#">
+          <a class="social__link social__link--instagram icon" aria-label="Мы в Инстаграм" href="#">
             <svg class="icon__item icon__item--insta" width="22" height="21">
               <use xlink:href="#icon-insta"></use>
             </svg>
-          Мы в Инстаграм</a>
-          <a class="social__link social__link--facebook icon" href="#">
+          </a>
+          <a class="social__link social__link--facebook icon" aria-label="Мы в Фэйсбуке" href="#">
             <svg class="icon__item icon__item--fb" width="15" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
-          Мы в Фэйсбук</a>
-          <a class="social__link social__link--twitter icon" href="#">
+          </a>
+          <a class="social__link social__link--twitter icon" aria-label="Мы в Твиттере" href="#">
             <svg class="icon__item icon__item--twitter" width="23" height="20">
               <use xlink:href="#icon-twitter"></use>
             </svg>
-          Мы в Твиттере</a>
+          </a>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text copyright__text--catalog">Разработано</b>
-          <a class="copyright__link copyright__link--catalog icon" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link copyright__link--catalog icon" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="icon__item icon__item--htmlacademy" width="27" height="34">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
-          HTML Academy</a>
+          </a>
         </div>
       </div>
     </footer>

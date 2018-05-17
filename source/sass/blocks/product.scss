@@ -114,7 +114,7 @@
   }
 
   .product__name {
-    padding-right: 55px;
+    padding-right: 50px;
     margin-top: 25px;
     padding-bottom: 5px;
     cursor: pointer;
@@ -226,7 +226,8 @@
 
   .product__name {
     @include font(20px,24px);
-    padding-left: 26px;
+    padding-left: 24px;
+    padding-right: 39px;
     margin-top: 22px;
   }
 
@@ -241,6 +242,7 @@
     @include font(17px,24px);
     padding-bottom: 0;
     margin-top: auto;
+    margin-left: 20px;
     padding-top: 24px;
 
     &.product__buy--big {
