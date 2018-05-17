@@ -199,6 +199,7 @@
 
     &.contacts__value--email {
       padding-left: 2px;
+
       @include font(17px,30px);
 
       &::after {
