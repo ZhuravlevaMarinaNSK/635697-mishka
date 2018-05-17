@@ -24,7 +24,6 @@
   padding-bottom: 23px;
   padding-right: 23px;
   padding-left: 0;
-  letter-spacing: 1.8px;
 
   @include font(25px,30px);
 }
@@ -88,7 +87,6 @@
     padding-right: 200px;
 
     @include font(43px,50px);
-    letter-spacing: 3px;
   }
 
   .reviews__item {
@@ -174,7 +172,6 @@
     padding-right: 200px;
 
     @include font(53px,57px);
-    letter-spacing: 4.2px;
   }
 
   .reviews {

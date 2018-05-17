@@ -24,7 +24,7 @@
   }
 
   .expanded-list__item a {
-    @include font(17px,24px);
+    @include font(15px,24px);
     color: $secondary-color;
     font-weight: 700;
     word-wrap: break-word;

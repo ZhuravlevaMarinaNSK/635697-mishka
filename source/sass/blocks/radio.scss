@@ -104,5 +104,6 @@
 
   .radio__label {
     padding-bottom: 43px;
+    @include font(19px,18px);
   }
 }

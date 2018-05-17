@@ -42,22 +42,22 @@
 
   &.fieldset__title:not(.fieldset__title--email)::after {
     content: "";
-    width: 77vw;
     background-color: $aqua-light;
     height: 2px;
     position: absolute;
     bottom: 27px;
-    margin-left: 20px;
+    right: 0;
+    left: 59px;
   }
 
   &.fieldset__title--email::after {
     content: "";
-    width: 56vw;
     background-color: $aqua-light;
     height: 2px;
     position: absolute;
     bottom: 25px;
     left: 80px;
+    right: 0;
   }
   /*&.fieldset__title:not(.fieldset__title--email)::after {
     content: "";
