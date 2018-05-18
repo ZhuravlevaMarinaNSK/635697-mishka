@@ -5,10 +5,6 @@
   cursor: pointer;
 }
 
-.checkbox__control {
-  display: none;
-}
-
 .checkbox__label {
   display: inline-block;
   position: relative;
@@ -24,6 +20,11 @@
   word-wrap: break-word;
   width: auto;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 
   &::before {
     content: "";
@@ -49,7 +50,8 @@
 }
 
 .checkbox__label:hover::before,
-.checkbox__label:focus::before {
+.checkbox__label:focus::before,
+.checkbox__control:focus .checkbox__label::before {
   border: 2px solid $aqua-form;
 }
 

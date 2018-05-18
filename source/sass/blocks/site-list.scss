@@ -21,11 +21,13 @@
 
   &:hover,
   &:focus {
-    color: $secondary-color-30;
+    opacity: 0.6;
+    outline: none;
   }
 
   &:active {
-    color: $secondary-color-60;
+    opacity: 0.3;
+    outline: none;
   }
 }
 

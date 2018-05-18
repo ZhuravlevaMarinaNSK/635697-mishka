@@ -6,28 +6,27 @@
   }
 
   &.fieldset--text {
-    padding-bottom: 11px;
+    padding-bottom: 14px;
   }
 
   &.fieldset--phone {
-    padding-bottom: 11px;
+    padding-bottom: 14px;
   }
 
   &.fieldset--email {
-    padding-bottom: 9px;
+    padding-bottom: 15px;
   }
 
   &.fieldset--textarea {
-    padding-bottom: 17px;
+    padding-bottom: 15px;
   }
 }
 
 .fieldset__title {
   margin: 0;
   padding: 0;
-  margin-left: 3px;
   text-transform: uppercase;
-  padding-top: 9px;
+  padding-top: 8px;
   padding-right: 27px;
   padding-bottom: 20px;
   position: relative;
@@ -149,7 +148,7 @@
     }
 
     &.fieldset--email {
-      padding-bottom: 34px;
+      padding-bottom: 32px;
     }
 
     &.fieldset--textarea {
@@ -223,7 +222,7 @@
     }
 
     &.fieldset--text {
-      padding-bottom: 31px;
+      padding-bottom: 33px;
     }
 
     &.fieldset--phone {

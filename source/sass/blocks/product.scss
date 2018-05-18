@@ -30,10 +30,12 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
     opacity: 0.3;
+    outline: none;
   }
 }
 
@@ -69,17 +71,28 @@
   right: 0;
   color: $secondary-color;
   opacity: 0.2;
+}
 
-  &:hover,
-  &:focus {
-    fill: $aqua-small-icons;
-    opacity: 1;
-  }
+.product__link:hover .product__icon,
+.product__link:focus .product__icon {
+  fill: $aqua-small-icons;
+  opacity: 1;
+}
 
-  &:active {
-    fill: $aqua-small-icons;
-    opacity: 0.3;
-  }
+.product__link:active .product__icon {
+  fill: $aqua-small-icons;
+  opacity: 0.3;
+}
+
+.product__link:hover .product__name,
+.product__link:focus .product__name {
+  opacity: 0.6;
+  outline: none;
+}
+
+.product__link:active .product__name {
+  opacity: 0.3;
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {

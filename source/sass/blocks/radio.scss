@@ -4,10 +4,6 @@
   align-items: flex-start;
 }
 
-.radio__control {
-  display: none;
-}
-
 .radio__label {
   display: block;
   position: relative;
@@ -24,6 +20,10 @@
   width: 225px;
   box-sizing: border-box;
 
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 
   &.radio__label::before {
     content: "";
@@ -52,15 +52,14 @@
     border-radius: 50%;
   }
 
+}
 
-  &:hover::before,
-  &:focus::before {
-    border: 2px solid $aqua-form;
-  }
+.radio__control:focus .radio__label::before {
+  border: 2px solid $aqua-form;
+}
 
-  &:active::before {
-    border: 2px solid $gray-30;
-  }
+.radio__control:active .radio__label::before {
+  border: 2px solid $gray-30;
 }
 
 .radio__control:checked ~ .radio__label::after {

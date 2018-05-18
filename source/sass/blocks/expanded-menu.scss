@@ -37,10 +37,12 @@
 
     &:hover,
     &:focus {
+      outline: none;
       color: $secondary-color-30;
     }
 
     &:active {
+      outline: none;
       color: $secondary-color-60;
     }
   }

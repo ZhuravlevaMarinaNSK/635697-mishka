@@ -94,10 +94,30 @@
     min-width: 50%;
     max-width: 50%;
     padding-bottom: 4px;
+  }
 
-    &:hover .products__link--interior {
-      margin-bottom: 5px;
-    }
+  .products__item--interior:hover,
+  .products__item--interior:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 5px $aqua-light;
+  }
+
+  .products__item--interior:active {
+    transform: translateY(-5px);
+    box-shadow: 0 5px rgba(99, 209, 187, 0.3);
+    opacity: 0.3;
+  }
+
+  .products__item--lego:hover,
+  .products__item--lego:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 5px $aqua-dark;
+  }
+
+  .products__item--lego:active {
+    transform: translateY(-5px);
+    box-shadow: 0 5px rgba(86, 195, 178, 0.3);
+    opacity: 0.3;
   }
 
   .products__link--interior::after {
