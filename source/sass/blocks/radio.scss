@@ -66,12 +66,13 @@
   border: 2px solid $aqua-form;
 }
 
-.radio__control:active ~ .radio__label::before {
-  border: 2px solid $gray-30;
-}
-
 .radio__control:checked ~ .radio__label::after {
   opacity: 1;
+}
+
+.radio__label.radio__label--toy::after {
+  left: 13px;
+  bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,8 +96,8 @@
     }
 
     &.radio__label::after {
-      left: 16px;
-      bottom: 40px;
+      left: 14px;
+      bottom: 42px;
       width: 20px;
       height: 20px;
     }
