@@ -52,7 +52,7 @@
     display: block;
     width: 100%;
     height: 24px;
-    bottom: -14px;
+    bottom: -13px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-position-x: 40%;
     background-size: 768px 25px;
@@ -80,7 +80,7 @@
   .background-main {
     &::after {
       height: 30px;
-      bottom: -14px;
+      bottom: -13px;
       background-position-x: 611%;
       background-size: 1250px 41px;
     }
