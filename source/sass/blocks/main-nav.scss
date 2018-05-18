@@ -77,7 +77,7 @@
   @include font(17px,24px);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 667px) {
   .main-nav--closed .site-list__item {
     display: none;
   }
@@ -180,7 +180,7 @@
       order: 1;
       width: 35.5%;
       margin-right: auto;
-      padding-top: 7px;
+      padding-top: 6px;
     }
 
     &.main-nav__list--user {

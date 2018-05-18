@@ -21,6 +21,11 @@
     width: 50%;
     padding-right: 5px;
     padding-left: 1px;
+
+    &.expanded-list__item--catalog {
+      padding-top: 13px;
+      padding-left: 0;
+    }
   }
 
   .expanded-list__item a {

@@ -78,7 +78,7 @@
 }
 
 .contacts-button__button-wrapper {
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 38px;
 }
 
@@ -113,8 +113,11 @@
     padding-right: 0;
     padding-left: 15px;
 
+
     &.contacts__value--email {
       padding-left: 15px;
+
+      @include font(17px,30px);
 
       &::after {
         width: 82%;
@@ -141,7 +144,7 @@
   }
 
   .contacts-button__button-wrapper {
-    padding-top: 45px;
+    padding-top: 49px;
     padding-bottom: 55px;
   }
 }

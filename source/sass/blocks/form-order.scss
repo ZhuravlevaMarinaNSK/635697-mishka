@@ -65,7 +65,8 @@
   .form-order__obligatory {
     order: 2;
 
-    @include font(16px,30px);
+    @include font(17px,30px);
+    font-weight: 400;
     min-width: 50%;
     text-align: right;
     margin-left: auto;

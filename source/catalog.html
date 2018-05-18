@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Магазин вязаных вещей ручной работы - Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
   </head>
@@ -35,14 +35,14 @@
                   </li>
                 </ul>
                 <ul class="main-nav__list main-nav__list--user user-list">
-                  <li class="user-list__item">
+                  <li class="user-list__item user-list__item--catalog">
                     <a class="user-list__link user-list__link--search" href="#">
                       <svg class="user-list__icon user-list__icon--catalog user-list__icon--search" width="18" height="18">
                         <use xlink:href="#icon-search"></use>
                       </svg>
                     Поиск по сайту</a>
                   </li>
-                  <li class="user-list__item">
+                  <li class="user-list__item user-list__item--catalog">
                     <a class="user-list__link user-list__link--cart" href="#">
                       <svg class="user-list__icon user-list__icon--cart user-list__icon--header" width="20" height="19">
                         <use xlink:href="#icon-cart"></use>
@@ -51,10 +51,10 @@
                   </li>
                 </ul>
                 <ul class="main-nav__list main-nav__list--expanded expanded-list">
-                  <li class="expanded-list__item">
+                  <li class="expanded-list__item expanded-list__item--catalog">
                     <a href="#">Новые поступления</a>
                   </li>
-                  <li class="expanded-list__item">
+                  <li class="expanded-list__item expanded-list__item--catalog">
                     <a href="#">Распродажа</a>
                   </li>
                 </ul>
@@ -100,7 +100,7 @@
               </div>
               <div class="product__buy">
                 <p class="product__price">1 200 руб.</p>
-                <a class="product__link" href="#">
+                <a class="product__link" href="#" aria-label="В корзину">
                   <svg class="product__icon" width="20" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -130,7 +130,7 @@
               </div>
               <div class="product__buy">
                 <p class="product__price">690 руб.</p>
-                <a class="product__link" href="#">
+                <a class="product__link" href="#" aria-label="В корзину">
                   <svg class="product__icon" width="20" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -160,7 +160,7 @@
               </div>
               <div class="product__buy product__buy--big">
                 <p class="product__price">1 500 руб.</p>
-                <a class="product__link" href="#">
+                <a class="product__link" href="#" aria-label="В корзину">
                   <svg class="product__icon" width="20" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>

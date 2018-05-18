@@ -4,8 +4,12 @@
   var cart = document.querySelectorAll('.product__icon');
   var popup = document.querySelector('.modal');
   var mask = document.querySelector('.overlay');
+  var map = document.querySelector('.map__img');
+  var mapWrap = document.querySelector('.map__wrapper');
 
   navMain.classList.remove('main-nav--nojs');
+  map.classList.remove('map__img--nojs');
+  mapWrap.classList.remove('map__wrapper--nojs');
 
   navToggle.addEventListener('click', function(evt) {
     if (navMain.classList.contains('main-nav--closed')) {
@@ -37,18 +41,18 @@
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
-        evt.preventDefault();
+      evt.preventDefault();
       if (popup.classList.contains('modal--show')) {
-          popup.classList.remove('modal--show');
-          mask.classList.remove('modal--show');
+        popup.classList.remove('modal--show');
+        mask.classList.remove('modal--show');
       }
     }
   });
 
   mask.addEventListener('click', function (evt) {
-      evt.preventDefault();
+    evt.preventDefault();
     if (popup.classList.contains('modal--show')) {
-        popup.classList.remove('modal--show');
-        mask.classList.remove('modal--show');
+      popup.classList.remove('modal--show');
+      mask.classList.remove('modal--show');
     }
   });

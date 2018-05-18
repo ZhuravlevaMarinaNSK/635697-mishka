@@ -8,16 +8,20 @@
 .user-list__icon--cart {
   fill: $secondary-color;
   opacity: 0.2;
+}
 
-  &:hover,
-  &:focus {
-    fill: $aqua-form;
-  }
+.user-list__item:hover .user-list__icon--search,
+.user-list__item:focus .user-list__icon--search,
+.user-list__item:hover .user-list__icon--cart,
+.user-list__item:focus .user-list__icon--cart {
+  fill: $aqua-small-icons;
+  opacity: 1;
+}
 
-  &:active {
-    fill: $aqua-form;
-    opacity: 0.3;
-  }
+.user-list__item:active .user-list__icon--search,
+.user-list__item:active .user-list__icon--cart {
+  fill: $aqua-small-icons;
+  opacity: 0.3;
 }
 
 .user-list__icon--search {
@@ -59,15 +63,15 @@
 @media (min-width: $tablet-width) {
   .user-list__link {
     padding: 0;
+  }
 
-    &:hover,
-    &:focus {
-      color: $secondary-color-30;
-    }
+  .user-list__item:hover .user-list__link,
+  .user-list__item:focus .user-list__link {
+   opacity: 0.6;
+  }
 
-    &:active {
-      color: $secondary-color-60;
-    }
+  .user-list__item:active .user-list__link {
+    opacity: 0.3;
   }
 
   .user-list__icon--search {
@@ -80,7 +84,7 @@
   }
 
   .user-list__icon--catalog {
-    left: 1px;
+    left: 15px;
   }
 
   .user-list__icon--header {
@@ -104,7 +108,7 @@
 
   .user-list__item {
     padding: 0;
-    padding-left: 31px;
+    padding-left: 44px;
     padding-bottom: 36px;
     border-left: 1px solid $gray-light;
 
@@ -112,8 +116,21 @@
       padding-left: 35px;
     }
 
+    &.user-list__item--catalog:last-of-type {
+      padding-left: 37px;
+    }
+
     &.user-list__item--catalog {
-      padding-right: 7px;
+      padding-right: 0;
+    }
+
+    &.user-list__item--form {
+      padding-right: 6px;
+      padding-left: 38px;
+    }
+
+    &.user-list__item--form:last-of-type {
+      padding-left: 32px;
     }
   }
 }
@@ -124,29 +141,38 @@
   }
 
   .user-list__item {
-    padding-left: 22px;
+    padding-left: 25px;
 
     &.user-list__item:last-of-type {
-      padding-left: 45px;
+      padding-left: 40px;
+    }
+
+    &.user-list__item--catalog:last-of-type {
+      padding-left: 43px;
     }
 
     &.user-list__item--catalog {
-      padding-left: 24px;
+      padding-left: 27px;
+    }
+
+    &.user-list__item--form {
       padding-right: 0;
+      padding-left: 27px;
     }
   }
 
   .user-list__link--cart {
-    padding-left: 41px;
+    padding-left: 47px;
   }
 
   .user-list__icon--search {
-    top: 5px;
-    left: 12px;
+    top: 7px;
+    left: 11px;
   }
 
   .user-list__icon--header {
-    left: 39px;
+    top: 35px;
+    left: 32px;
   }
 
   .user-list__icon--form {

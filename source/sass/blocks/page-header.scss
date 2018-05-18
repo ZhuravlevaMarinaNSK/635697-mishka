@@ -25,7 +25,6 @@
 
   .page-header {
     background: linear-gradient($primary-color 52%, #f1f1f1 52%);
-    width: 100vw;
   }
 
   .page-header-main {
@@ -36,6 +35,5 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background: linear-gradient($primary-color 67%, $gray 67%);
-    width: 100vw;
   }
 }
