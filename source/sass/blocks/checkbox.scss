@@ -51,7 +51,7 @@
 
 .checkbox__label:hover::before,
 .checkbox__label:focus::before,
-.checkbox__control:focus .checkbox__label::before {
+.checkbox__control:focus ~ .checkbox__label::before {
   border: 2px solid $aqua-form;
 }
 

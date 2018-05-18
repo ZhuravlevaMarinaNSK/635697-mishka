@@ -52,13 +52,21 @@
     border-radius: 50%;
   }
 
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid $aqua-form;
+  }
+
+  &:active::before {
+    border: 2px solid $gray-30;
+  }
 }
 
-.radio__control:focus .radio__label::before {
+.radio__control:focus ~ .radio__label::before {
   border: 2px solid $aqua-form;
 }
 
-.radio__control:active .radio__label::before {
+.radio__control:active ~ .radio__label::before {
   border: 2px solid $gray-30;
 }
 
