@@ -202,7 +202,9 @@
             <source media="(min-width: 668px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="map__img map__img--nojs map__img--static" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта проезда">
           </picture>
-          <iframe class="map__img map__img--interactive" src="https://yandex.ru/map-widget/v1/-/CBUZNWQH3D"></iframe>
+          <div class="map__img--interactive-nojs map__img--interactive">
+            <iframe class="map__img" src="https://yandex.ru/map-widget/v1/-/CBUZNWQH3D"></iframe>
+          </div>
         </div>
         <div class="container contacts-button">
           <div class="contacts-button__button-wrapper">
@@ -237,8 +239,8 @@
           </a>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text copyright__text--catalog">Разработано</b>
-          <a class="copyright__link copyright__link--catalog icon" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link icon" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="icon__item icon__item--htmlacademy" width="27" height="34">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>

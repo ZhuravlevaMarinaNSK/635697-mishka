@@ -2,7 +2,8 @@
   position: relative;
 }
 
-.map__img--static {
+.map__img--static,
+.map__img--interactive-nojs {
   display: none;
 }
 
