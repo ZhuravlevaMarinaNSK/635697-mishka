@@ -12,6 +12,10 @@
   display: block;
 }
 
+.map__img--static {
+  padding-bottom: 10px;
+}
+
 .map__img {
   background-color: $primary-color;
   width: 100%;
@@ -61,6 +65,10 @@
       top: -234px;
       left: 402px;
     }
+  }
+
+  .map__img--static {
+    padding-bottom: 0;
   }
 
   .map__img {
