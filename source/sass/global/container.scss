@@ -1,6 +1,5 @@
 .container {
   min-width: 260px;
-
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
@@ -20,5 +19,6 @@
     padding-left: 50px;
     padding-right: 50px;
     max-width: $desktop-width;
+    box-sizing: border-box;
   }
 }

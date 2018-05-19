@@ -8,8 +8,11 @@
   var mapWrap = document.querySelector('.map__wrapper');
 
   navMain.classList.remove('main-nav--nojs');
-  map.classList.remove('map__img--nojs');
-  mapWrap.classList.remove('map__wrapper--nojs');
+
+  if (map) {
+    map.classList.remove('map__img--nojs');
+    mapWrap.classList.remove('map__wrapper--nojs');
+  }
 
   navToggle.addEventListener('click', function(evt) {
     if (navMain.classList.contains('main-nav--closed')) {
