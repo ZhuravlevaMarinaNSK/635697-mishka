@@ -1,16 +1,6 @@
 .map {
   position: relative;
   z-index: 2;
-
-  &::after {
-    content: url("/img/icon-map-pin.svg");
-    position: absolute;
-    width: 66px;
-    height: 101px;
-    top: 145px;
-    left: 137px;
-    z-index: 5;
-  }
 }
 
 .map__img {
@@ -26,11 +16,6 @@
 @media (min-width: $tablet-width) {
   .map {
     width: 100%;
-
-    &::after {
-      top: 140px;
-      left: 363px;
-    }
   }
 
   .map__img {
@@ -43,11 +28,6 @@
   .map {
     position: relative;
     margin-bottom: 25px;
-
-    &::after {
-      top: -236px;
-      left: 71%;
-    }
   }
 
   .map__img {
