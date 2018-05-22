@@ -87,6 +87,8 @@
     padding-right: 30px;
     padding-bottom: 45px;
 
+    @include font(19px,18px);
+
     &.radio__label::before {
       margin-left: 0;
       left: -2px;
